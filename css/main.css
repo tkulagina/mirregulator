@@ -1066,8 +1066,8 @@ h4 {
 .mySlides {
   width: 258px;
   height: 172px;
-  padding: 4px 4px;
-  border: 1px solid var(--main-color);
+  padding: 2px 2px;
+  border: 2px solid var(--main-color);
   border-radius: 12px;
 }
 
@@ -1086,8 +1086,6 @@ h4 {
   .mySlides {
     width: 602px;
     height: 400px;
-    padding: 4px 4px;
-    border: 1px solid var(--main-color);
     border-radius: 20px;
   }
   .gallery_img {
