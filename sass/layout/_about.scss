@@ -1,0 +1,42 @@
+.about-list_item {
+    margin-bottom: 32px;
+}
+
+.about-list_item:last-child {
+    margin-bottom: 0;
+}
+
+.about-list_icon {
+    margin-left: 144px;
+    margin-bottom: 24px;
+}
+
+.about-list_text {
+    font-size: 16px;
+    line-height: 1.43;
+}
+
+@include desktop {  
+         
+    .about-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    }
+
+    .about-list_item {
+        margin-bottom: 0;        
+    }
+    
+    .about-list_icon {
+        margin-left: 108px;
+        width: 64px;
+        height: 64px;
+    }
+    
+    .about-list_text {
+        width: 280px;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+}

@@ -1,0 +1,40 @@
+.cta_btn {
+    margin-left: 78px;
+    padding: 14px 56px;
+    
+    border: 2px solid var(--main-color);
+    border-radius: 36px;
+    
+    font-family: inherit;   
+    font-size: 14px;        
+    line-height: 1.43;
+    color: var(--main-color);
+    text-decoration: none;
+
+    text-align: center;
+    cursor: pointer;
+    
+    background-color: transparent;
+
+    transition: color var(--time-duration) var(--timing-function);
+    transition: background-color var(--time-duration) var(--timing-function)
+  }
+
+  .cta_btn:hover,
+  .cta_btn:focus {
+    color: var(--main-color);
+    background-color: var(--hover-color);
+  }
+
+
+@include desktop {
+    .cta_btn {
+        margin-left: 0;
+        padding: 20px 64px;        
+        border-radius: 36px;
+    
+        font-size: 20px;        
+        line-height: 1.4; 
+    }
+
+}

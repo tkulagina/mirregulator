@@ -1,0 +1,101 @@
+.project .close-line {
+    width: 100px;
+}
+
+.project-section_title {
+    font-size: 22px;
+}
+
+.project-list {
+    margin-bottom: 40px;
+}
+
+.project-list_item {
+    margin-bottom: 32px;
+}
+
+.project-list_item:last-child {
+    margin-bottom: 0;
+}
+
+.project-list_icon {
+    margin-left: 144px;
+    margin-bottom: 24px;
+}
+
+.project_type {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.project_harvest {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.project_fertilizer {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+.project_object {
+    font-size: 16px;
+    line-height: 1.25;
+    font-style: italic;
+}
+
+@include desktop {
+    .project .close-line {
+        width: 770px;
+    }
+    
+    .project-section_title {
+        margin-left: 200px;        
+    }
+    
+    .project-list {        
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: calc(100% / 3);
+        margin-top: -32px;
+        margin-left: -32px;
+        margin-bottom: 80px;
+    }
+    
+    .project-list_item {        
+        margin-right: 0;
+        margin-bottom: 0;
+        margin-left: 32px;
+        margin-top: 32px;
+        width: 384px;
+    }
+            
+    .project-list_icon {
+        margin-left: 144px;
+        margin-bottom: 28px;
+        width: 64px;
+        height: 64px;
+    }
+        
+    .project_type {        
+        font-size: 18px;
+        line-height: 1.28;
+    }
+    
+    .project_harvest, 
+    .project_fertilizer {        
+        font-size: 24px;        
+    }
+            
+    .project_object {        
+        font-size: 18px;
+        line-height: 1.28;        
+    }
+
+    .project .cta_btn {
+        margin-left: 496px;
+    }
+}

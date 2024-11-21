@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegulatorMIR</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/main.min.css" />
+    <script type="module" src="/index.js"></script>
+</head>
+<body>
+<header class="header" id="home">
+    <div class="container container-header">
+      <a class="link logo" href="./index.html" aria-label="логотип компанії MIR">
+        <picture>
+          <source
+            media="(min-width:1240px)"
+            srcset="./images/hero/logo-desktop-1x-min.png 1x,
+            ./images/hero/logo-desktop-2x-min.png 2x"/>
+          <source
+            media="(min-width:375px)"
+            srcset="./images/hero/logo-mobile-1x-min.png 1x,
+            ./images/hero/logo-mobile-2x-min.png 2x"/>
+          <img  class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="логотип компанії" />
+        </picture>      
+      </a>
+      <div class="language-switcher">
+        <a href="./indexeng.html">
+        <picture>
+          <source
+            srcset="./images/hero/english-1x.jpg 1x,
+            ./images/hero/english-2x.jpg 2x"/>
+          <img  class="english-switcher" src="./images/hero/english-1x.jpg" alt="прапор Великої Брітанії" />
+        </picture>
+        </a>
+        <a href="./index.html">      
+        <picture>
+          <source
+            srcset="./images/hero/ukraine-1x.jpg 1x,
+            ./images/hero/ukraine-2x.jpg 2x"/>
+          <img  class="ukrainian-switcher" src="./images/hero/ukraine-1x.jpg" alt="прапор України" />
+        </picture>
+      </a>        
+      </div>
+      <button class="mobile-menu-open-btn menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      type="button">
+        <svg class="mobile-menu-open-icon" aria-label="switch menu button">
+            <use class="open-icon" href="./images/icons.svg#burger"></use>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="list nav-list">
+          <li class="nav_item list">
+            <a class="link" href="#about">Про нас</a>
+          </li>
+          <li class="nav_item list">
+            <a class="link" href="#project">Про проект</a>
+          </li>
+          <li class="nav_item list">
+            <a class="link" href="#advantages">Переваги</a>
+          </li>
+          <li class="nav_item list">
+            <a class="link" href="#products">Продукція</a>
+          </li>
+        </ul>
+      </nav>
+      
+    </div> 
+  
+    
+      <div class="menu-container js-menu-container" id="mobile-menu">                
+        <div class="menu-container__overall">
+        <a class="link logo" href="./index.html" aria-label="Логотип компанії MIR">
+          <picture>
+            <source
+              media="(min-width:1240px)"
+              srcset="./images/hero/logo-desktop-1x-min.png 1x,
+              ./images/hero/logo-desktop-2x-min.png 2x"/>
+            <source
+              media="(min-width:375px)"
+              srcset="./images/hero/logo-mobile-1x-min.png 1x,
+              ./images/hero/logo-mobile-2x-min.png 2x"/>
+            <img  class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="The company logo" />
+          </picture>      
+        </a>
+        <button class="mobile-menu-close-btn menu-toggle js-close-menu">
+          <svg class="mobile-menu-close-icon" width="19" height="19">
+            <use href="./images/icons.svg#close"></use>
+        </svg>
+        </button>
+        </div>
+        <div class="menu-container__bottom">        
+          <ul class="mobile-menu">
+            <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="./index.html#about">Про нас</a></li>
+              <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#project">Про проект</a></li>
+              <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#advantages">Переваги</a></li>
+              <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#products">Продукція</a></li>
+          </ul>
+           
+          <a href="#order" class="mobile-cta_btn cta_btn js-open-menu">Замовити</a>
+        </div>
+              
+    </div> 
+</header>
+<main>
+<!-- hero -->
+<section class="hero">
+  <div class="container container-hero">
+      <picture>
+          <source
+              media="(min-width:1240px)"
+              srcset="./images/hero/hero-desktop-1x.png 1x,
+              ./images/hero/hero-desktop-2x.png 2x"/>
+          <source
+              media="(min-width:375px)"
+              srcset="./images/hero/hero-mobile-1x.png 1x,
+              ./images/hero/hero-mobile-2x.png 2x"/>
+          <img class="hero-img" src="./images/hero/hero-mobile-1x.png" alt="Продукція компанії" />
+      </picture>
+      <div class="hero_decription">
+          <h1 class="hero_title">Інноваційні технології для агробізнесу</h1>
+          <p class="hero_text">Багатоцільовий імунорегулятор росту та розвитку рослин MIR підвищує ефективність ЗЗР та добрив, сприяючи їхньому кращому проникненню, розподілу та дії. Препарат MIR дозволяє зменшити норму використання ЗЗР та добрив на 20-40% </p>
+      
+          <a href="#order" class="cta_btn">Замовити</a>
+      </div>
+  </div>
+</section>
+<!-- about -->
+    <section class="about" id="about">
+      <div class="container">
+          <div class="section-title">
+              <div class="open-line"></div>
+              <h2 class="section_lable">Про нас</h2>
+              <div class="close-line"></div>
+          </div>
+          
+          <ul class="about-list list">
+              <li class="about-list_item">                    
+                  <svg class="about-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#university"></use>
+                  </svg>
+                  <p class="about-list_text">Розробка методики використання препаратів MIR проводилася в тісній співпраці з Херсонським державним аграрним університетом</p>     
+              </li>
+              <li class="about-list_item">                    
+                  <svg class="about-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#briefcase"></use>
+                  </svg>
+                  <p class="about-list_text">Про застосування препарату MIR написано більше 10 наукових статей та захищено дисертацію на здобуття наукового ступеня кандидата с/г наук</p>            
+              </li>                
+              <li class="about-list_item">                    
+                  <svg class="about-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#license"></use>
+                  </svg>
+                  <p class="about-list_text">У 2017 році препарат MIR було включено до інформаційного збірника “Інноваційні розробки університетів і наукових установ МОН України”</p>        
+              </li>
+              <li class="about-list_item">                    
+                  <svg class="about-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#tractor"></use>
+                  </svg>
+                  <p class="about-list_text">Польові випробування  проводились на приватних земельних ділянках  і на землях дослідних інститутів НАН України з 2011 року</p>        
+              </li>
+          </ul>        
+      </div>
+  </section> 
+<!-- project -->
+<section class="project" id="project">
+  <div class="container">
+      <div class="section-title">
+          <div class="open-line"></div>
+          <h2 class="section_lable">Про проект</h2>
+          <div class="close-line"></div>
+      </div>
+      <div>
+          <h3 class="project-section_title">Приклади результатів використання препарату MIR</h3>
+          <ul class="project-list list">
+              <li class="project-list_item">
+                  <svg class="project-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#grape"></use>
+                  </svg>
+                  <h4 class="project_name">Виноград</h4>
+                  <p class="project_type">2 обробки по листу</p>
+                  <p class="project_harvest">Приріст урожаю&#58; 21&#37;</p>
+                  <p class="project_fertilizer">Зниження використання ЗЗР&#58; 30&#37;</p>
+                  <p class="project_object">Агрофірма &#34;Совхоз Білозерский&#34; Херсонська обл &#40;2021р&#41;</p>
+              </li>
+              <li class="project-list_item">
+                  <svg class="project-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#rape"></use>
+                  </svg>
+                  <h4 class="project_name">Ріпак</h4>
+                  <p class="project_type">1 обробка насіння &#43; 1 обробка по листу</p>
+                  <p class="project_harvest">Приріст урожаю&#58; 21&#37;</p>
+                  <p class="project_fertilizer">Зниження використання ЗЗР&#58; 30&#37;</p>
+                  <p class="project_object">ТОВ СП  &#34;Нібулон&#34; Миколаївська обл &#40;2021р&#41;</p>
+              </li>
+              <li class="project-list_item">
+                  <svg class="project-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#wheat"></use>
+                  </svg>
+                  <h4 class="project_name">Пшениця</h4>
+                  <p class="project_type">1 обробка насіння &#43; 2 обробки по листу</p>
+                  <p class="project_harvest">Приріст урожаю&#58; 55&#37;</p>
+                  <p class="project_fertilizer">Зниження використання ЗЗР&#58; 30&#37;</p>
+                  <p class="project_object">ТОВ &#34;Орташ Україна&#34; Миколаївська обл &#40;2021р&#41;</p>
+              </li>
+              <li class="project-list_item">
+                  <svg class="project-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#corn"></use>
+                  </svg>
+                  <h4 class="project_name">Кукурудза</h4>
+                  <p class="project_type">1 обробка насіння &#43; 1 обробка по листу</p>
+                  <p class="project_harvest">Приріст урожаю&#58; 32.5&#37;</p>
+                  <p class="project_fertilizer">Зниження використання ЗЗР&#58; 30&#37;</p>
+                  <p class="project_object">Херсонський  державний аграрно-економічний університет Херсонська обл &#40;2013р&#41;</p>
+              </li>
+              <li class="project-list_item">
+                  <svg class="project-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#watermelon"></use>
+                  </svg>
+                  <h4 class="project_name">Кавун</h4>
+                  <p class="project_type">1 обробка насіння &#43; 2 обробки по листу</p>
+                  <p class="project_harvest">Приріст урожаю&#58; 21&#37;</p>
+                  <p class="project_fertilizer">Зниження використання ЗЗР&#58; 30&#37;</p>
+                  <p class="project_object">СТОВ &#34;Нива&#34; Скадовського р-на, Херсонська обл &#40;2013р&#41;</p>
+              </li>
+              <li class="project-list_item">
+                  <svg class="project-list_icon" width="48" height="48">
+                      <use href="./images/icons.svg#sunflower"></use>
+                  </svg>
+                  <h4 class="project_name">Соняшник</h4>
+                  <p class="project_type">1 обробка насіння &#43; 1 обробка по листу</p>
+                  <p class="project_harvest">Приріст урожаю&#58; 25.6&#37;</p>
+                  <p class="project_fertilizer">Зниження використання ЗЗР&#58; 30&#37;</p>
+                  <p class="project_object">СТОВ &#34;Нива&#34; Скадовського р-на, Херсонська обл &#40;2013р&#41;</p>
+              </li>
+          </ul>
+      </div>
+      <a href="#order" class="cta_btn">Замовити</a>
+     
+  </div>
+</section>
+<!-- advantages -->
+<section class="advantages" id="advantages">
+  <div class="container">
+      <div class="section-title">
+          <div class="open-line"></div>
+          <h2 class="section_lable">Переваги</h2>
+          <div class="close-line"></div>
+      </div>
+      <ul class="advantages-list list">
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture >
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage1-winter-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage1-winter-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage1-winter-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage1-winter-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage1-winter-mobile-1x.jpg" alt="Пшениця під снігом" />                       
+                  </picture>          
+                  <p class="advantages_item_text">Підвищує стійкість рослин до заморозків, нестачі вологи, посадки під другий урожай, хвороб і т.ін.</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture >
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage2-root-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage2-root-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage2-root-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage2-root-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage2-root-mobile-1x.jpg" alt="Паростки зеленої пшениці з рясно розвинутими коріннями" />                       
+                  </picture>                
+                  <p class="advantages_item_text">Сприяє активному розвитку та кращому заглибленню кореневої системи</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage3-greenfield-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage3-greenfield-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage3-greenfield-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage3-greenfield-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage3-greenfield-mobile-1x.jpg" alt="Зелене поле" />                     
+                  </picture>                
+                  <p class="advantages_item_text">Прискорює приріст зеленої маси рослин та підвищує урожайність на 10-25&#37;</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage4-wheat-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage4-wheat-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage4-wheat-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage4-wheat-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage4-wheat-mobile-1x.jpg" alt="Поле зрілої пшениці" />                    
+                  </picture>                
+                  <p class="advantages_item_text">Зменшує витрати азотних добрив на 50&#37; за рахунок їхнього кращого засвоєння рослинами</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage5-sunflower-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage5-sunflower-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage5-sunflower-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage5-sunflower-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage5-sunflower-mobile-1x.jpg" alt="Поле соняхів" />                        
+                  </picture>                
+                  <p class="advantages_item_text">Покращує польову схожість насіння та збільшує в рослинах енергію росту</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage6-vegetables-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage6-vegetables-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage6-vegetables-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage6-vegetables-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage6-vegetables-mobile-1x.jpg" alt="Овочі" />                        
+                  </picture>                
+                  <p class="advantages_item_text">Зміцнює імунітет і стійкість рослин до бактеріальних та грибкових захворювань</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage7-corn-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage7-corn-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage7-corn-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage7-corn-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage7-corn-mobile-1x.jpg" alt="Кукурудза" />                        
+                  </picture>                
+                  <p class="advantages_item_text">Покращує якість продукції (вміст клейковини, білків, жирів крохмалю, цукру тощо)</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage8-soil-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage8-soil-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/advantages/advantage8-soil-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage8-soil-mobile-1x.jpg 2x"/>
+                      <img  class="advantages_item_img" src="./images/advantages/advantage8-soil-mobile-1x.jpg" alt="Руки, яки тримають землю із зеленим паростком" />                        </picture>
+                  </picture>                
+                  <p class="advantages_item_text">Не завдає шкоди ґрунтам, кінцевому продукту або навколишньому середовищу</p>
+              </div>
+          </li>
+          <li class="advantages-list_item">              
+              <div class="advantages_item_wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/advantages/advantage9-perelik-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage9-perelik-desktop-2x.jpg 2x"/>                        
+                      <img  class="advantages_item_img" src="./images/advantages/advantage9-perelik-desktop-1x.jpg" alt="Обкладинка збірнику Переліка пестицидів" />                        </picture>
+                  </picture>                
+                  <p class="advantages_item_text">Препарати MIR мають ТУ, вони внесені до Переліку пестицидів та агрохімікатів, дозволених до використання в Україні</p>
+              </div>
+          </li>
+      </ul>
+  </div>
+</section>
+<!-- products -->
+<section class="products" id="products">
+  <div class="container">
+      <div class="section-title">
+          <div class="open-line"></div>
+          <h2 class="section_lable">Продукція</h2>
+          <div class="close-line"></div>
+      </div>
+      <div class="product_descript">
+          <p class="product_decript-up">Матричний розчин препарату застосовується як окремо так і в бакових сумішах їз ЗЗР та розчинними добривами (стимуляторами)</p>
+          <p class="product_descript-bottom">Рекомендовано зниження вмісту ЗЗР в середньому на 30% від встановленої виробником норми</p>
+      </div>
+      <ul class="attention-list list">
+          <li class="attention">&#42; Оплата здійснюється у гривнях по курсу на день  продажу</li>
+          <li class="attention">&#42;&#42; Фасування можливе на індивідуальне замовлення залежно від сільгоспкультури та обладнання</li>
+          <li class="attention">&#42;&#42;&#42; Зовнішній вигляд фасування може відрізнятися від заявлених на сайті</li>
+      </ul>
+      <div class="graine_group">
+          <h3 class="product_group-title">Обробка насіння</h3>
+          <p class="product_group-text">Підвищує схожість і енергію проростання насіння; стимулює ріст, прискорює розвиток рослин; стимулює коренеутворення в рослин; забезпечує активне паросткоутворення; покращує приживаність розсади, сіянців і саджанців при пересадці</p>
+          <ul class="product_group-list list">
+              <li class="product-list_item">
+              <div class="product-item_wrap">
+                  <h4 class="product-item_title">MIR-Насіння-Зернові</h4>
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-wheat-desktop-1x.png 1x,
+                          ./images/products/products-seeds-wheat-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-wheat-mobile-1x.png 1x,
+                          ./images/products/products-seeds-wheat-mobile-2x.png 2x"/>
+                      <img  class="product_item_img" src="./images/products/products-seeds-wheat-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-насіння-зернові" />                      
+                  </picture>      
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-wheat-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-wheat-price-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-wheat-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-wheat-price-mobile-2x.png 2x"/>
+                      <img  class="product_item_price-img" src="./images/products/products-seeds-wheat-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 3,8 долл за га" />                       
+                  </picture>  
+                  <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+              </div>
+              </li>
+              <li class="product-list_item">
+              <div class="product-item_wrap">
+                  <h4 class="product-item_title">MIR-Насіння-Ріпак</h4>
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-rape-desktop-1x.png 1x,
+                          ./images/products/products-seeds-rape-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-rape-mobile-1x.png 1x,
+                          ./images/products/products-seeds-rape-mobile-2x.png 2x"/>
+                      <img  class="product_item_img" src="./images/products/products-seeds-rape-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-насіння-ріпак" />                      
+                  </picture>      
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-rape-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-rape-price-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-rape-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-rape-price-mobile-2x.png 2x"/>
+                      <img  class="product_item_price-img" src="./images/products/products-seeds-rape-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 5 долл за га" />                       
+                  </picture>  
+                  <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+              </div>
+              </li>
+              <li class="product-list_item">
+              <div class="product-item_wrap">
+                  <h4 class="product-item_title">MIR-Насіння-Соняшнік</h4>
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-sunflower-desktop-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-sunflower-mobile-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-mobile-2x.png 2x"/>
+                      <img  class="product_item_img" src="./images/products/products-seeds-sunflower-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-насіння-соняшнік" />                      
+                  </picture>      
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-sunflower-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-price-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-sunflower-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-price-mobile-2x.png 2x"/>
+                      <img  class="product_item_price-img" src="./images/products/products-seeds-sunflower-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 4,6 долл за га" />                       
+                  </picture>  
+                  <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+              </div>
+              </li>
+              <li class="product-list_item">
+              <div class="product-item_wrap">
+                  <h4 class="product-item_title">MIR-Насіння-Кукурудза</h4>
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-corn-desktop-1x.png 1x,
+                          ./images/products/products-seeds-corn-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-corn-mobile-1x.png 1x,
+                          ./images/products/products-seeds-corn-mobile-2x.png 2x"/>
+                      <img  class="product_item_img" src="./images/products/products-seeds-corn-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-насіння-кукурудза" />                      
+                  </picture>      
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/products/products-seeds-corn-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-corn-price-desktop-2x.png 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/products/products-seeds-corn-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-corn-price-mobile-2x.png 2x"/>
+                      <img  class="product_item_price-img" src="./images/products/products-seeds-corn-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 4,1 долл за га" />                       
+                  </picture>  
+                  <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+              </div>
+              </li>
+          </ul>
+      </div>
+
+      <div class="leaf_group">
+          <h3 class="product_group-title">Обробка по листу</h3>
+          <p class="product_group-text">Підвищує стійкість рослин до несприятливих факторів навколишнього середовища (морози, нестача вологи, посадка на другий врожай, захворювання тощо); прискорює приріст зеленої маси рослин та дозрівання врожаю</p>
+          <ul class="product_group-list list">
+              <li class="product-list_item-update">
+                  <div class="product-item_wrap-update">
+                      <div class="card-title">
+                          <h4 class="product-item_title">MIR-Лист</h4>
+                          <p class="product-item_text">Використовується для зернових, зернобобових та олійних культур.</p>
+                      </div>
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-leaf-desktop-1x.png 1x,
+                              ./images/products/products-leaf-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-leaf-mobile-1x.png 1x,
+                              ./images/products/products-leaf-mobile-2x.png 2x"/>
+                          <img  class="product_item_img-update" src="./images/products/products-leaf-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-лист" />                      
+                      </picture>      
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-leaf-price-desktop-1x.png 1x,
+                              ./images/products/products-leaf-price-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-leaf-price-mobile-1x.png 1x,
+                              ./images/products/products-leaf-price-mobile-2x.png 2x"/>
+                          <img  class="product_item_price-img-update" src="./images/products/products-leaf-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 5 долл за га" />                       
+                      </picture>  
+                      <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+                  </div>
+              </li>
+              <li class="product-list_item-update">
+                  <div class="product-item_wrap-update">
+                      <div class="card-title">
+                          <h4 class="product-item_title">MIR-Виноград</h4>
+                          <p class="product-item_text">Використовується для виноградників</p>
+                      </div>
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-grape-desktop-1x.png 1x,
+                              ./images/products/products-grape-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-grape-mobile-1x.png 1x,
+                              ./images/products/products-grape-mobile-2x.png 2x"/>
+                          <img  class="product_item_img-update" src="./images/products/products-grape-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-Виноград" />                      
+                      </picture>      
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-grape-price-desktop-1x.png 1x,
+                              ./images/products/products-grape-price-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-grape-price-mobile-1x.png 1x,
+                              ./images/products/products-grape-price-mobile-2x.png 2x"/>
+                          <img  class="product_item_price-img-update" src="./images/products/products-grape-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 15 долл за га" />                       
+                      </picture>  
+                      <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+                  </div>
+              </li>
+          </ul>    
+      </div>
+
+      <div class="special_group">
+          <h3 class="product_group-title">Спеціальна обробка</h3>
+          <ul class="product_group-list list">
+              <li class="product-list_item-update">
+                  <div class="product-item_wrap-update">
+                      <div class="card-title">
+                          <h4 class="product-item_title">MIR-Десикант</h4>
+                          <p class="product-item_text">Прискорює зменшення вологості рослинної маси, припинення розвитку рослини починаючи з кореневої системи, висушування стебла та листя</p>
+                      </div>
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-desikant-desktop-1x.png 1x,
+                              ./images/products/products-desikant-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-desikant-mobile-1x.png 1x,
+                              ./images/products/products-desikant-mobile-2x.png 2x"/>
+                          <img  class="product_item_img-update" src="./images/products/products-desikant-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-десікант" />                      
+                      </picture>      
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-desikant-price-desktop-1x.png 1x,
+                              ./images/products/products-desikant-price-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-desikant-price-mobile-1x.png 1x,
+                              ./images/products/products-desikant-price-mobile-2x.png 2x"/>
+                          <img  class="product_item_price-img-update" src="./images/products/products-desikant-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 4 долл за га" />                       
+                      </picture>  
+                      <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+                  </div>
+              </li>
+              <li class="product-list_item-update">
+                  <div class="product-item_wrap-update">
+                      <div class="card-title">
+                          <h4 class="product-item_title">MIR-Універсал</h4>
+                          <p class="product-item_text">Використовується для овочів, баштанних культур та фруктів</p>
+                      </div>
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-universal-desktop-1x.png 1x,
+                              ./images/products/products-universal-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-universal-mobile-1x.png 1x,
+                              ./images/products/products-universal-mobile-2x.png 2x"/>
+                          <img  class="product_item_img-update" src="./images/products/products-universal-mobile-1x.png" alt="Білі коробки із кольорової етікеткої з продукцїєю МІР-універсал" />                      
+                      </picture>      
+                      <picture>
+                          <source
+                              media="(min-width:1240px)"
+                              srcset="./images/products/products-universal-price-desktop-1x.png 1x,
+                              ./images/products/products-universal-price-desktop-2x.png 2x"/>
+                          <source
+                              media="(min-width:375px)"
+                              srcset="./images/products/products-universal-price-mobile-1x.png 1x,
+                              ./images/products/products-universal-price-mobile-2x.png 2x"/>
+                          <img  class="product_item_price-img-update" src="./images/products/products-universal-price-mobile-1x.png" alt="Зелений ціннік на якому ціна 0.75 долл за сотку" />                       
+                      </picture>  
+                      <p class="packaging-info">Фасування здійснюється на індивідуальне замовлення</p>   
+                  </div>
+              </li>
+          </ul>    
+      </div>
+
+      <a href="#order" class="cta_btn">Замовити</a>
+  </div>
+</section>
+<!-- gallery -->
+<section class="gallery">
+  <div class="container">
+      <div class="section-title">
+          <div class="open-line"></div>
+          <h2 class="section_lable">Галерея</h2>
+          <div class="close-line"></div>
+      </div>
+     <div class="gallery_wrapper">
+          <div class="mySlides fade">
+              <div class="gallery_img-wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/gallery/gallery-rape-desktop-1x.jpg 1x,
+                          ./images/gallery/gallery-rape-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/gallery/gallery-rape-mobile-1x.jpg 1x,
+                          ./images/gallery/gallery-rape-mobile-1x.jpg 2x"/>
+                      <img  class="gallery_img" src="./images/gallery/gallery-rape-mobile-1x.jpg" alt="Поле засіяне ріпаком" />                      
+                  </picture>    
+              </div>                
+              <p class="gallery_img-text">Image by Michael Schwarzenberger from Pixabay</p>
+          </div>
+          <div class="mySlides fade">
+              <div class="gallery_img-wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/gallery/gallery-grape-desktop-1x.jpg 1x,
+                          ./images/gallery/gallery-grape-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/gallery/gallery-grape-mobile-1x.jpg 1x,
+                          ./images/gallery/gallery-grape-mobile-1x.jpg 2x"/>
+                      <img  class="gallery_img" src="./images/gallery/gallery-grape-mobile-1x.jpg" alt="Виноградник з гронкою синього винограду" />                      
+                  </picture>    
+              </div>                
+              <p class="gallery_img-text">Image by Michael Schwarzenberger from Pixabay</p>
+          </div>
+          <div class="mySlides fade">
+              <div class="gallery_img-wrap">
+                  <picture>
+                      <source
+                          media="(min-width:1240px)"
+                          srcset="./images/gallery/gallery-corn-desktop-1x.jpg 1x,
+                          ./images/gallery/gallery-corn-desktop-2x.jpg 2x"/>
+                      <source
+                          media="(min-width:375px)"
+                          srcset="./images/gallery/gallery-corn-mobile-1x.jpg 1x,
+                          ./images/gallery/gallery-corn-mobile-1x.jpg 2x"/>
+                      <img  class="gallery_img" src="./images/gallery/gallery-corn-mobile-1x.jpg" alt="Поле засіяне кукурудзою" />                      
+                  </picture>    
+              </div>                
+              <p class="gallery_img-text">Image by Public Domaine Pictires Pixabay</p>
+          </div>
+     </div>
+  </div>
+</section>
+<!-- order -->
+<section class="order buynow-js" id="order">
+  <div class="container">
+      <div class="section-title">
+          <div class="open-line"></div>
+          <h2 class="section_lable">Замовити</h2>
+          <div class="close-line"></div>
+      </div>
+      <div class="order_section-content">
+        <p class="order-text">Для замовлення або отримання консультації про застосування багатоцільового імунорегулятора росту та розвитку рослин MIR саме у Вашому господарстві - будь ласка, заповнить форму і наші фахівці зв'яжуться з Вами</p>
+     
+        <div class="wrapper">
+          <div class="form">
+            <form action="#" id="form" class="form__body">                
+              <div class="form__item">
+                <label for="formName" class="form__label">П.І.Б.*:</label>
+                <input id="formName" 
+                type="text" name="name" 
+                class="form__input _req" 
+                placeholder="Павло Петрович Стешенко"
+                pattern="[a-zA-Z]+">
+              </div>
+              <div class="form__item">
+                <label for="formPhone" class="form__label">Вкажить номер Вашого телефону*:</label>
+                <input id="formPhone" 
+                type="text" 
+                name="phone" 
+                class="form__input _req _phone"
+                placeholder="+38(123) 456 78 90"
+                data-slots="_">
+              </div>
+              <div class="form__item">
+                <label for="formType" class="form__label">Яки сільгоспкультури вирощуєте?*:</label>
+                <input id="formType" 
+                type="text" 
+                class="form__input _req _type" 
+                placeholder="Кукурудза, ріпак, жито"
+                name="Product-type">
+              </div>
+              
+              <div class="form__item">
+                <label for="formMessage" class="form__label">Текст Вашого замовлення чи питання:</label>
+                <textarea name="message" id="formMessage" class="form__input"></textarea>
+              </div>
+              
+              <div class="form__item">
+                <div class="checkbox">
+                  <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                  <label for="formAgreement" class="checkbox__label"><span class="agreement-lisence">Я даю згоду на обробку персональних даних, згідно з <a href="umova.html">Умовами</a>*</span></label>
+                </div>
+              </div>
+               
+              <button class="cta_btn" type="submit">Відправити</button>
+            </form>
+        </div>
+      </div>       
+  </div> 
+</section>
+</main>
+<!-- footer -->
+<footer class="footer">
+  <div class="container">
+      <div class="footer-upper">
+          <a class="link logo" href="./index.html" aria-label="логотип компанії MIR">
+          <picture>
+            <source
+              media="(min-width:1240px)"
+              srcset="./images/hero/logo-desktop-1x-min.png 1x,
+              ./images/hero/logo-desktop-2x-min.png 2x"/>
+            <source
+              media="(min-width:375px)"
+              srcset="./images/hero/logo-mobile-1x-min.png 1x,
+              ./images/hero/logo-mobile-2x-min.png 2x"/>
+            <img  class="footer-logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="логотип компанії" />
+          </picture>      
+          </a>
+          <div class="footer-down">
+          <div class="footer-adress">
+              <ul class="footer-adress_list list">
+                  <li class="footer-adress_item">
+                      <svg class="footer-adress_icon" width="24" height="24">
+                          <use href="./images/icons.svg#envelope"></use>
+                      </svg>
+                      <p class="footer-adress_text">58018 Украіна, Чернівці</p>
+                  </li>
+                  <li class="footer-adress_item">
+                      <svg class="footer-adress_icon" width="24" height="24">
+                          <use href="./images/icons.svg#phone"></use>
+                      </svg>
+                      <div class="phone-list">
+                      <p class="footer-adress_text">+38-067-450-42-90</p>
+                      <p class="footer-adress_text">+38-050-295-04-19</p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <div class="footer-social">
+          <ul class="footer-social_list list">
+              <li class="footer-social_item">
+                  <a href="https://t.me/tkulagina1974">
+                  <svg class="footer-social_icon" width="24" height="24">
+                      <use href="./images/icons.svg#telegram"></use>
+                  </svg>
+                  </a>
+              </li>
+              <li class="footer-social_item">
+                  <a href="https://wa.me/380676504290">
+                  <svg class="footer-social_icon" width="24" height="24">
+                      <use href="./images/icons.svg#wattsUp"></use>
+                  </svg>
+                  </a>
+              </li>
+              <li class="footer-social_item">
+                  <a href="https://www.facebook.com/profile.php?id=100079930453765">
+                  <svg class="footer-social_icon" width="24" height="24">
+                      <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                  </a>
+              </li>
+          </ul>
+          </div>
+          </div>
+      </div>
+          <a href="umova.html" class="agreement-link link">
+              <p class="agreement-text">Згода на обробку персональних даних</p>
+          </a>
+        <div class="copyright-line"></div>
+        <div class="copyright">
+          
+          <p class="copyright-text">&#169; All right received</p>
+        </div>  
+  </div>
+</footer> 
+<!-- swipe-up -->
+<button class="scrollToTopBtn" type="button">
+  <svg class="scroll-icon" aria-label="top-up" width="24" height="24">
+     <use href="./images/icons.svg#upArrow"></use>
+  </svg>
+</button> 
+    
+    <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="//web-ptica.ru/VRV-files/jquery-2.1.3.min.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+.hero {
+    background-image: url(../images/hero/underlay-desktop-2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero-img {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 267px;
+}
+
+.hero_title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.43;
+    
+}
+
+.hero_text {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.43;
+}
+
+@include desktop {
+    .container-hero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-img {
+        margin: 0;
+        margin-bottom: 0;
+        width: 592px;
+    }
+
+    .hero_decription {
+        padding-top: 144px;
+        display: block;
+        width: 592px;
+    }
+
+    .hero_title {
+        margin-bottom: 32px;
+        font-size: 56px;
+        line-height: 1.36;
+        
+    }
+    
+    .hero_text {
+        margin-bottom: 60px;
+        font-size: 28px;
+    }
+
+    .hero .cta_btn {
+        margin-left: 184px;
+    }
+}

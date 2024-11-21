@@ -1,0 +1,44 @@
+.gallery_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.mySlides {
+  width: 258px;
+  height: 172px;
+  padding: 4px 4px;
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+}
+
+.gallery_img {
+  width: 250px;
+  height: 164px;
+  border-radius: 8px;
+}
+
+.gallery_img-text {
+  font-size: 16px;
+  line-height: 1.43;
+}
+
+@include desktop {
+  .mySlides {
+    width: 602px;
+    height: 400px;
+    padding: 4px 4px;
+    border: 1px solid var(--main-color);
+    border-radius: 20px;
+  }
+  
+  .gallery_img {
+    width: 592px;
+    height: 390px;
+    border-radius: 16px;
+  }
+  
+  .gallery_img-text {
+    font-size: 16px;
+    line-height: 1.43;
+  }
+}

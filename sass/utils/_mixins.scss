@@ -1,0 +1,20 @@
+@mixin mobile {
+    @media screen and (min-width: 375px) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: 1240px) {
+      @content;
+    }
+  }
+  
+  @mixin retina {
+    @media (min-device-pixel-ratio: 2),
+      (-vebkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      @content;
+    }
+  }

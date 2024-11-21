@@ -1,0 +1,46 @@
+.section-title {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 40px;  
+}
+
+.section_lable {      
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.open-line {
+    margin-right: 16px;
+    width: 40px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+
+.close-line {
+    margin-left: 16px;
+    width: 150px;
+    border-bottom: 2px solid var(--main-color);
+}
+
+@include desktop {
+    .section-title {        
+        margin-bottom: 80px;  
+    }
+    .section_lable {         
+        font-size: 40px;        
+        line-height: 1.2;
+    }   
+    
+    .open-line {        
+        width: 200px;
+    }
+
+    .close-line {       
+        width: 800px;        
+    }
+}

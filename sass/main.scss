@@ -1,0 +1,23 @@
+@import './base/common';
+@import './base/resets';
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/container';
+@import './utils/visually-hidden';
+
+@import './components/sections';
+@import './components/titles';
+@import './components/buttons';
+
+@import './layout/header';
+@import './layout/swipe-up';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/project';
+@import './layout/advantages';
+@import './layout/products';
+@import './layout/gallery';
+@import './layout/order';
+@import './layout/footer';
+@import './layout/personaldata';
