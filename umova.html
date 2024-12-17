@@ -1,230 +1,260 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RegulatorMIR</title>
-    <link rel="icon" href="./images/favicon.ico" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="./css/main.min.css" />
-    
-  </head>
-  <body>    
-    <header class="header" id="home">
-      <div class="container container-header">
-        <a class="link logo" href="./index.html" aria-label="логотип компанії MIR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RegulatorMIR</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./css/main.min.css" />
+
+</head>
+
+<body>
+  <header class="header" id="home">
+    <div class="container container-header">
+      <a class="link logo" href="./index.html" aria-label="логотип компанії MIR">
+        <picture>
+          <source media="(min-width:1240px)" srcset="./images/hero/logo-desktop-1x-min.png 1x,
+              ./images/hero/logo-desktop-2x-min.png 2x" />
+          <source media="(min-width:375px)" srcset="./images/hero/logo-mobile-1x-min.png 1x,
+              ./images/hero/logo-mobile-2x-min.png 2x" />
+          <img class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="логотип компанії" loading="lazy" />
+        </picture>
+      </a>
+      <div class="language-switcher">
+        <a href="./indexeng.html">
           <picture>
-            <source
-              media="(min-width:1240px)"
-              srcset="./images/hero/logo-desktop-1x-min.png 1x,
-              ./images/hero/logo-desktop-2x-min.png 2x"/>
-            <source
-              media="(min-width:375px)"
-              srcset="./images/hero/logo-mobile-1x-min.png 1x,
-              ./images/hero/logo-mobile-2x-min.png 2x"/>
-            <img  class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="логотип компанії" />
-          </picture>      
+            <source srcset="./images/hero/english-1x.jpg 1x,
+              ./images/hero/english-2x.jpg 2x" />
+            <img class="english-switcher" src="./images/hero/english-1x.jpg" alt="прапор Великої Брітанії"
+              loading="lazy" />
+          </picture>
         </a>
-        <div class="language-switcher">
-          <a href="./indexeng.html">
+        <a href="./index.html">
           <picture>
-            <source
-              srcset="./images/hero/english-1x.jpg 1x,
-              ./images/hero/english-2x.jpg 2x"/>
-            <img  class="english-switcher" src="./images/hero/english-1x.jpg" alt="прапор Великої Брітанії" />
+            <source srcset="./images/hero/ukraine-1x.jpg 1x,
+              ./images/hero/ukraine-2x.jpg 2x" />
+            <img class="ukrainian-switcher" src="./images/hero/ukraine-1x.jpg" alt="прапор України" loading="lazy" />
           </picture>
-          </a>
-          <a href="./index.html">      
-          <picture>
-            <source
-              srcset="./images/hero/ukraine-1x.jpg 1x,
-              ./images/hero/ukraine-2x.jpg 2x"/>
-            <img  class="ukrainian-switcher" src="./images/hero/ukraine-1x.jpg" alt="прапор України" />
-          </picture>
-        </a>        
-        </div>
-        <button class="mobile-menu-open-btn menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
+        </a>
+      </div>
+      <button class="mobile-menu-open-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu"
         type="button">
-          <svg class="mobile-menu-open-icon" aria-label="switch menu button">
-              <use class="open-icon" href="./images/icons.svg#burger"></use>
+        <svg class="mobile-menu-open-icon" aria-label="switch menu button">
+          <use class="open-icon" href="./images/icons.svg#burger"></use>
+        </svg>
+      </button>
+      <nav class="navigation">
+        <ul class="list nav-list">
+          <li class="nav_item list">
+            <a class="link" href="#about">Про нас</a>
+          </li>
+          <li class="nav_item list">
+            <a class="link" href="#project">Про проект</a>
+          </li>
+          <li class="nav_item list">
+            <a class="link" href="#advantages">Переваги</a>
+          </li>
+          <li class="nav_item list">
+            <a class="link" href="#products">Продукція</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="menu-container__overall">
+        <a class="link logo" href="./index.html" aria-label="Логотип компанії MIR">
+          <picture>
+            <source media="(min-width:1240px)" srcset="./images/hero/logo-desktop-1x-min.png 1x,
+                ./images/hero/logo-desktop-2x-min.png 2x" />
+            <source media="(min-width:375px)" srcset="./images/hero/logo-mobile-1x-min.png 1x,
+                ./images/hero/logo-mobile-2x-min.png 2x" />
+            <img class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="The company logo" loading="lazy" />
+          </picture>
+        </a>
+        <button class="mobile-menu-close-btn menu-toggle js-close-menu">
+          <svg class="mobile-menu-close-icon" width="19" height="19">
+            <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <nav class="navigation">
-          <ul class="list nav-list">
-            <li class="nav_item list">
-              <a class="link" href="#about">Про нас</a>
-            </li>
-            <li class="nav_item list">
-              <a class="link" href="#project">Про проект</a>
-            </li>
-            <li class="nav_item list">
-              <a class="link" href="#advantages">Переваги</a>
-            </li>
-            <li class="nav_item list">
-              <a class="link" href="#products">Продукція</a>
-            </li>
-          </ul>
-        </nav>
-        
-      </div> 
-    
-      
-        <div class="menu-container js-menu-container" id="mobile-menu">                
-          <div class="menu-container__overall">
-          <a class="link logo" href="./index.html" aria-label="Логотип компанії MIR">
-            <picture>
-              <source
-                media="(min-width:1240px)"
-                srcset="./images/hero/logo-desktop-1x-min.png 1x,
-                ./images/hero/logo-desktop-2x-min.png 2x"/>
-              <source
-                media="(min-width:375px)"
-                srcset="./images/hero/logo-mobile-1x-min.png 1x,
-                ./images/hero/logo-mobile-2x-min.png 2x"/>
-              <img  class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="The company logo" />
-            </picture>      
-          </a>
-          <button class="mobile-menu-close-btn menu-toggle js-close-menu">
-            <svg class="mobile-menu-close-icon" width="19" height="19">
-              <use href="./images/icons.svg#close"></use>
-          </svg>
-          </button>
-          </div>
-          <div class="menu-container__bottom">        
-            <ul class="mobile-menu">
-              <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="./index.html#about">Про нас</a></li>
-                <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#project">Про проект</a></li>
-                <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#advantages">Переваги</a></li>
-                <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#products">Продукція</a></li>
-            </ul>
-             
-            <a href="#order" class="mobile-cta_btn cta_btn js-open-menu">Замовити</a>
-          </div>
-                
-      </div> 
-  </header>
-    <main>
-      <section class="personaldata">
-        <div class="container">
-            <a href="./index.html#order">
-                <svg class="backArrow_icon" width="40" height="40">
-                    <use href="./images/icons.svg#backArrow"></use>
-                </svg>
-            </a>
-            <h2 class="section_lable personal">Умови використання та обробки персональних даних</h2>
-            <ul class="list">
-                <li class="personaldata_list">
-                    <h3 class="personaldata_list-title">Збір та обробка персональних даних</h3>
-                    <p class="personaldata_list-item">Відповідно до Закону України «Про захист персональних даних» та Загального регламенту захисту даних (GDPR), надані вами персональні дані (ім'я, прізвище, електронна пошта, телефонний номер) збираються, обробляються та зберігаються з метою забезпечення надання запитуваної інформації, а також з метою вдосконалення наших послуг. Передача цих даних є добровільною, але необхідною для надання відповідей на ваші запити.</p>
-                </li>
-                <li class="personaldata_list">
-                    <h3 class="personaldata_list-title">Мета обробки даних</h3>
-                    <p class="personaldata_list-item">Надані вами дані використовуватимуться виключно для зв'язку з вами та надання додаткової інформації щодо наших послуг, а також для подальшого покращення обслуговування.</p>
-                </li>
-                <li class="personaldata_list">
-                    <h3 class="personaldata_list-title">Зберігання та захист персональних даних</h3>
-                    <p class="personaldata_list-item">Ми зобов'язуємося вживати всіх необхідних технічних і організаційних заходів для захисту ваших персональних даних від незаконного доступу, зміни, розголошення або знищення. Дані зберігаються в захищених базах даних та обробляються тільки уповноваженими особами.</p>
-                </li>
-                <li class="personaldata_list">
-                    <h3 class="personaldata_list-title">Права суб'єкта персональних даних</h3>
-                    <p class="personaldata_list-item">Відповідно до законодавства України та норм GDPR, ви маєте право: запитувати доступ до своїх персональних даних; вимагати виправлення чи видалення своїх персональних даних; відкликати свою згоду на обробку персональних даних;
-                        заперечувати проти обробки ваших персональних даних; звернутися до контролюючих органів у разі порушення ваших прав.</p>
-                </li>
-                <li class="personaldata_list">
-                    <h3 class="personaldata_list-title">Передача даних третім особам</h3>
-                    <p class="personaldata_list-item">Ми не передаємо ваші персональні дані третім особам без вашої попередньої згоди, за винятком випадків, коли це необхідно для виконання закону.</p>
-                </li>
-                <li class="personaldata_list">
-                    <h3 class="personaldata_list-title">Згода на обробку персональних даних</h3>
-                    <p class="personaldata_list-item">Натискаючи кнопку «Підтвердити» або іншим чином залишаючи заявку на сайті, ви підтверджуєте, що ознайомлені з цими умовами та надаєте свою згоду на обробку ваших персональних даних згідно з цими умовами.</p>
-                </li>
-            </ul>
-            <p>Примітка: Ви маєте право у будь-який момент відкликати свою згоду на обробку персональних даних, звернувшись до нас.</p>
-        </div>
-    </section>      
-    </main>
-    <footer class="footer">
-      <div class="container">
-          <div class="footer-upper">
-              <a class="link logo" href="./index.html" aria-label="логотип компанії MIR">
-              <picture>
-                <source
-                  media="(min-width:1240px)"
-                  srcset="./images/hero/logo-desktop-1x-min.png 1x,
-                  ./images/hero/logo-desktop-2x-min.png 2x"/>
-                <source
-                  media="(min-width:375px)"
-                  srcset="./images/hero/logo-mobile-1x-min.png 1x,
-                  ./images/hero/logo-mobile-2x-min.png 2x"/>
-                <img  class="footer-logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="логотип компанії" />
-              </picture>      
-              </a>
-              <div class="footer-down">
-              <div class="footer-adress">
-                  <ul class="footer-adress_list list">
-                      <li class="footer-adress_item">
-                          <svg class="footer-adress_icon" width="24" height="24">
-                              <use href="./images/icons.svg#envelope"></use>
-                          </svg>
-                          <p class="footer-adress_text">58018 Украіна, Чернівці</p>
-                      </li>
-                      <li class="footer-adress_item">
-                          <svg class="footer-adress_icon" width="24" height="24">
-                              <use href="./images/icons.svg#phone"></use>
-                          </svg>
-                          <div class="phone-list">
-                          <p class="footer-adress_text">+38-067-450-42-90</p>
-                          <p class="footer-adress_text">+38-050-295-04-19</p>
-                          </div>
-                      </li>
-                  </ul>
-              </div>
-              <div class="footer-social">
-              <ul class="footer-social_list list">
-                  <li class="footer-social_item">
-                      <a href="https://t.me/tkulagina1974">
-                      <svg class="footer-social_icon" width="24" height="24">
-                          <use href="./images/icons.svg#telegram"></use>
-                      </svg>
-                      </a>
-                  </li>
-                  <li class="footer-social_item">
-                      <a href="https://wa.me/380676504290">
-                      <svg class="footer-social_icon" width="24" height="24">
-                          <use href="./images/icons.svg#wattsUp"></use>
-                      </svg>
-                      </a>
-                  </li>
-                  <li class="footer-social_item">
-                      <a href="https://www.facebook.com/profile.php?id=100079930453765">
-                      <svg class="footer-social_icon" width="24" height="24">
-                          <use href="./images/icons.svg#facebook"></use>
-                      </svg>
-                      </a>
-                  </li>
-              </ul>
-              </div>
-              </div>
-          </div>
-              <a href="./umova.html" class="agreement-link link">
-                  <p class="agreement-text">Згода на обробку персональних даних</p>
-              </a>
-            <div class="copyright-line"></div>
-            <div class="copyright">
-              
-              <p class="copyright-text">&#169; All right received</p>
-            </div>  
       </div>
-    </footer>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/swipe-up.js"></script>
-    
-    <script src="./js/anchor.js"></script>
-    
-  </body>
+      <div class="menu-container__bottom">
+        <ul class="mobile-menu">
+          <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu"
+              href="./index.html#about">Про нас</a></li>
+          <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#project">Про
+              проект</a></li>
+          <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu"
+              href="#advantages">Переваги</a></li>
+          <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu"
+              href="#products">Продукція</a></li>
+        </ul>
+
+        <a href="#order" class="mobile-cta_btn cta_btn js-open-menu">Замовити</a>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="personaldata">
+      <div class="container">
+        <a href="./index.html#order">
+          <svg class="backArrow_icon" width="40" height="40">
+            <use href="./images/icons.svg#backArrow"></use>
+          </svg>
+        </a>
+        <h2 class="section_lable personal">Умови використання та обробки персональних даних</h2>
+        <ul class="list">
+          <li class="personaldata_list">
+            <h3 class="personaldata_list-title">Збір та обробка персональних даних</h3>
+            <p class="personaldata_list-item">Відповідно до Закону України «Про захист персональних даних» та Загального
+              регламенту захисту даних (GDPR), надані вами персональні дані (ім'я, прізвище, електронна пошта,
+              телефонний номер) збираються, обробляються та зберігаються з метою забезпечення надання запитуваної
+              інформації, а також з метою вдосконалення наших послуг. Передача цих даних є добровільною, але необхідною
+              для надання відповідей на ваші запити.</p>
+          </li>
+          <li class="personaldata_list">
+            <h3 class="personaldata_list-title">Мета обробки даних</h3>
+            <p class="personaldata_list-item">Надані вами дані використовуватимуться виключно для зв'язку з вами та
+              надання додаткової інформації щодо наших послуг, а також для подальшого покращення обслуговування.</p>
+          </li>
+          <li class="personaldata_list">
+            <h3 class="personaldata_list-title">Зберігання та захист персональних даних</h3>
+            <p class="personaldata_list-item">Ми зобов'язуємося вживати всіх необхідних технічних і організаційних
+              заходів для захисту ваших персональних даних від незаконного доступу, зміни, розголошення або знищення.
+              Дані зберігаються в захищених базах даних та обробляються тільки уповноваженими особами.</p>
+          </li>
+          <li class="personaldata_list">
+            <h3 class="personaldata_list-title">Права суб'єкта персональних даних</h3>
+            <p class="personaldata_list-item">Відповідно до законодавства України та норм GDPR, ви маєте право:
+              запитувати доступ до своїх персональних даних; вимагати виправлення чи видалення своїх персональних даних;
+              відкликати свою згоду на обробку персональних даних;
+              заперечувати проти обробки ваших персональних даних; звернутися до контролюючих органів у разі порушення
+              ваших прав.</p>
+          </li>
+          <li class="personaldata_list">
+            <h3 class="personaldata_list-title">Передача даних третім особам</h3>
+            <p class="personaldata_list-item">Ми не передаємо ваші персональні дані третім особам без вашої попередньої
+              згоди, за винятком випадків, коли це необхідно для виконання закону.</p>
+          </li>
+          <li class="personaldata_list">
+            <h3 class="personaldata_list-title">Згода на обробку персональних даних</h3>
+            <p class="personaldata_list-item">Натискаючи кнопку «Підтвердити» або іншим чином залишаючи заявку на сайті,
+              ви підтверджуєте, що ознайомлені з цими умовами та надаєте свою згоду на обробку ваших персональних даних
+              згідно з цими умовами.</p>
+          </li>
+        </ul>
+        <p>Примітка: Ви маєте право у будь-який момент відкликати свою згоду на обробку персональних даних, звернувшись
+          до нас.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-upper">
+        <a class="link logo" href="./index.html" aria-label="логотип компанії MIR">
+          <picture>
+            <source media="(min-width:1240px)" srcset="./images/hero/logo-desktop-1x-min.png 1x,
+                  ./images/hero/logo-desktop-2x-min.png 2x" />
+            <source media="(min-width:375px)" srcset="./images/hero/logo-mobile-1x-min.png 1x,
+                  ./images/hero/logo-mobile-2x-min.png 2x" />
+            <img class="footer-logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="логотип компанії"
+              loading="lazy" />
+          </picture>
+        </a>
+        <div class="footer-down">
+          <div class="footer-adress">
+            <ul class="footer-adress_list list">
+              <li class="footer-adress_item">
+                <svg class="footer-adress_icon" width="24" height="24">
+                  <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                <p class="footer-adress_text">58018 Украіна, Чернівці</p>
+              </li>
+              <li class="footer-adress_item">
+                <svg class="footer-adress_icon" width="24" height="24">
+                  <use href="./images/icons.svg#phone"></use>
+                </svg>
+                <div class="phone-list">
+                  <p class="footer-adress_text">+38-067-450-42-90</p>
+                  <p class="footer-adress_text">+38-050-295-04-19</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul class="footer-social_list list">
+              <li class="footer-social_item">
+                <a href="https://t.me/tkulagina1974">
+                  <svg class="footer-social_icon" width="24" height="24">
+                    <use href="./images/icons.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social_item">
+                <a href="https://wa.me/380676504290">
+                  <svg class="footer-social_icon" width="24" height="24">
+                    <use href="./images/icons.svg#wattsUp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social_item">
+                <a href="https://www.facebook.com/profile.php?id=100079930453765">
+                  <svg class="footer-social_icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a href="./umova.html" class="agreement-link link">
+        <p class="agreement-text">Згода на обробку персональних даних</p>
+      </a>
+      <div class="copyright-line"></div>
+      <div class="copyright">
+
+        <p class="copyright-text">&#169; All right received</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/swipe-up.js"></script>
+
+  <script src="./js/anchor.js"></script>
+  <script>
+    document.querySelector('.backArrow_icon').addEventListener('click', function () {
+      // Повертаємось на головну сторінку
+      window.location.href = 'index.html#form'; // Перехід на головну сторінку та автоматичний скролінг до форми
+
+    });
+
+    window.onload = function () {
+      // Перевіряємо, чи є у URL хеш (наприклад, #form)
+      if (window.location.hash === '#form') {
+        const formElement = document.getElementById('form'); // Ідентифікатор вашої форми
+        if (formElement) {
+          formElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }
+    };
+
+  </script>
+</body>
+
 </html>
