@@ -97,7 +97,10 @@ document.addEventListener('DOMContentLoaded', function () {
       if (response.ok) {
         let result = await response.json();
         alert(result.message); // Виводимо повідомлення від сервера
+<<<<<<< HEAD
         formPreview.innerHTML = '';
+=======
+>>>>>>> 8eb0042602ec02bca2ae006ec7389d82f99fcb60
         form.reset(); // Очищаємо форму
         form.classList.remove('_sending');
       } else {
