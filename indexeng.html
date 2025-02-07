@@ -1,882 +1,852 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>RegulatorMIR</title>
     <link rel="icon" href="./images/favicon.ico" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />
     <script src="./index.js"></script>
 
-  </head>
-  <body>    
+</head>
+
+<body>
     <header class="header" id="home">
-    <div class="container container-header">
-      <a class="link logo" href="./indexeng.html" aria-label="logo company MIR">
-        <picture>
-          <source
-            media="(min-width:1240px)"
-            srcset="./images/hero/logo-desktop-1x-min.png 1x,
-            ./images/hero/logo-desktop-2x-min.png 2x"/>
-          <source
-            media="(min-width:375px)"
-            srcset="./images/hero/logo-mobile-1x-min.png 1x,
-            ./images/hero/logo-mobile-2x-min.png 2x"/>
-          <img  class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="logo company" />
-        </picture>      
-      </a>
-      <div class="language-switcher">
-        <a href="./indexeng.html">
-        <picture>
-          <source
-            srcset="./images/hero/english-1x.jpg 1x,
-            ./images/hero/english-2x.jpg 2x"/>
-          <img  class="english-switcher" src="./images/hero/english-1x.jpg" alt="UK flag" />
-        </picture>
-        </a>
-        <a href="./index.html">      
-        <picture>
-          <source
-            srcset="./images/hero/ukraine-1x.jpg 1x,
-            ./images/hero/ukraine-2x.jpg 2x"/>
-          <img  class="ukrainian-switcher" src="./images/hero/ukraine-1x.jpg" alt="Ukrainian flag" />
-        </picture>
-      </a>        
-      </div>
-      <button class="mobile-menu-open-btn menu-toggle js-open-menu"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-      type="button">
-        <svg class="mobile-menu-open-icon" aria-label="switch menu button">
-            <use class="open-icon" href="./images/icons.svg#burger"></use>
-        </svg>
-      </button>
-      <nav class="navigation">
-        <ul class="list nav-list">
-          <li class="nav_item list">
-            <a class="link" href="#about">About Us</a>
-          </li>
-          <li class="nav_item list">
-            <a class="link" href="#project">About the Project</a>
-          </li>
-          <li class="nav_item list">
-            <a class="link" href="#advantages">Advantages</a>
-          </li>
-          <li class="nav_item list">
-            <a class="link" href="#products">Products</a>
-          </li>
-        </ul>
-      </nav>
-      
-    </div> 
-  
-    
-      <div class="menu-container js-menu-container" id="mobile-menu">                
-        <div class="menu-container__overall">
-        <a class="link logo" href="./indexeng.html" aria-label="logo company MIR">
-          <picture>
-            <source
-              media="(min-width:1240px)"
-              srcset="./images/hero/logo-desktop-1x-min.png 1x,
-              ./images/hero/logo-desktop-2x-min.png 2x"/>
-            <source
-              media="(min-width:375px)"
-              srcset="./images/hero/logo-mobile-1x-min.png 1x,
-              ./images/hero/logo-mobile-2x-min.png 2x"/>
-            <img  class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="The company logo" />
-          </picture>      
-        </a>
-        <button class="mobile-menu-close-btn menu-toggle js-close-menu">
-          <svg class="mobile-menu-close-icon" width="19" height="19">
-            <use href="./images/icons.svg#close"></use>
-        </svg>
-        </button>
-        </div>
-        <div class="menu-container__bottom">        
-          <ul class="mobile-menu">
-            <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="./index.html#about">About Us</a></li>
-              <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#project">About the Project</a></li>
-              <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#advantages">Advantages</a></li>
-              <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu" href="#products">Products</a></li>
-          </ul>
-           
-          <a href="#order" class="mobile-cta_btn cta_btn js-open-menu">Order Now</a>
-        </div>
-              
-    </div> 
-  </header>
-  <main>
-  <!-- hero -->
-  <section class="hero">
-    <div class="container container-hero">
-        <picture>
-            <source
-                media="(min-width:1240px)"
-                srcset="./images/hero/hero-desktop-1x.png 1x,
-                ./images/hero/hero-desktop-2x.png 2x"/>
-            <source
-                media="(min-width:375px)"
-                srcset="./images/hero/hero-mobile-1x.png 1x,
-                ./images/hero/hero-mobile-2x.png 2x"/>
-            <img class="hero-img" src="./images/hero/hero-mobile-1x.png" alt="company products" />
-        </picture>
-        <div class="hero_decription">
-            <h1 class="hero_title">Innovative Technologies for Agribusiness</h1>
-            <p class="hero_text">The multipurpose immunoregulator of plant growth and development, MIR, enhances the effectiveness of plant protection products (PPP) and fertilizers by improving their absorption, distribution, and action. The MIR preparation allows for a 20-40% reduction in the use of PPP and fertilizers.</p>
-        
-            <a href="#order" class="cta_btn">Order Now</a>
-        </div>
-    </div>
-</section>
-<!-- about -->
-<section class="about" id="about">
-  <div class="container">
-      <div class="section-title">
-          <div class="open-line"></div>
-          <h2 class="section_lable">About Us</h2>
-          <div class="close-line"></div>
-      </div>
-      
-      <ul class="about-list list">
-          <li class="about-list_item">                    
-              <svg class="about-list_icon" width="48" height="48">
-                  <use href="./images/icons.svg#university"></use>
-              </svg>
-              <p class="about-list_text">The methodology for using MIR products was developed in close collaboration with the Kherson State Agrarian University.</p>     
-          </li>
-          <li class="about-list_item">                    
-              <svg class="about-list_icon" width="48" height="48">
-                  <use href="./images/icons.svg#briefcase"></use>
-              </svg>
-              <p class="about-list_text">More than 10 scientific articles have been published on the use of the MIR product, and a PhD thesis in agricultural sciences has been defended.</p>            
-          </li>                
-          <li class="about-list_item">                    
-              <svg class="about-list_icon" width="48" height="48">
-                  <use href="./images/icons.svg#license"></use>
-              </svg>
-              <p class="about-list_text">In 2017, the MIR product was included in the information collection "Innovative Developments of Universities and Scientific Institutions of the Ministry of Education and Science of Ukraine."</p>        
-          </li>
-          <li class="about-list_item">                    
-              <svg class="about-list_icon" width="48" height="48">
-                  <use href="./images/icons.svg#tractor"></use>
-              </svg>
-              <p class="about-list_text">Field trials have been conducted on private land plots and on research institute lands of the National Academy of Sciences of Ukraine since 2011.</p>        
-          </li>
-      </ul>        
-  </div>
-</section>
-<!-- project -->
-<section class="project" id="project">
-  <div class="container">
-      <div class="section-title">
-          <div class="open-line"></div>
-          <h2 class="section_lable">About the Project</h2>
-          <div class="close-line"></div>
-      </div>
-      <div>
-          <h3 class="project-section_title">Examples of results from using the MIR product</h3>
-          <ul class="project-list list">
-              <li class="project-list_item">
-                  <svg class="project-list_icon" width="48" height="48">
-                      <use href="./images/icons.svg#grape"></use>
-                  </svg>
-                  <h4 class="project_name">Grape</h4>
-                  <p class="project_type">2 foliar treatments</p>
-                  <p class="project_harvest">Yield increase&#58; 21&#37;</p>
-                  <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
-                  <p class="project_object">Agricultural firm &#34;Sovkhoz Bilozersky&#34; Kherson Region &#40;2021&#41;</p>
-              </li>
-              <li class="project-list_item">
-                  <svg class="project-list_icon" width="48" height="48">
-                      <use href="./images/icons.svg#rape"></use>
-                  </svg>
-                  <h4 class="project_name">Rapeseed (Canola)</h4>
-                  <p class="project_type">1 seed treatment &#43; 1 foliar treatment</p>
-                  <p class="project_harvest">Yield increase&#58; 21&#37;</p>
-                  <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
-                  <p class="project_object">JV &#34;Nibulon&#34; LLC Mykolaiv region &#40;2021&#41;</p>
-              </li>
-              <li class="project-list_item">
-                  <svg class="project-list_icon" width="48" height="48">
-                      <use href="./images/icons.svg#wheat"></use>
-                  </svg>
-                  <h4 class="project_name">Wheat</h4>
-                  <p class="project_type">1 seed treatment &#43; 2 foliar treatments</p>
-                  <p class="project_harvest">Yield increase&#58; 55&#37;</p>
-                  <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
-                  <p class="project_object">LLC &#34;Ortash Ukraine&#34; Mykolaiv region &#40;2021&#41;</p>
-              </li>
-              <li class="project-list_item">
-                  <svg class="project-list_icon" width="48" height="48">
-                      <use href="./images/icons.svg#corn"></use>
-                  </svg>
-                  <h4 class="project_name">Corn</h4>
-                  <p class="project_type">1 seed treatment &#43; 1 foliar treatment</p>
-                  <p class="project_harvest">Yield increase&#58; 32.5&#37;</p>
-                  <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
-                  <p class="project_object">Kherson State Agrarian and Economic University Kherson Region &#40;2013&#41;</p>
-              </li>
-              <li class="project-list_item">
-                  <svg class="project-list_icon" width="48" height="48">
-                      <use href="./images/icons.svg#watermelon"></use>
-                  </svg>
-                  <h4 class="project_name">Watermelon</h4>
-                  <p class="project_type">1 seed treatment &#43; 2 foliar treatments</p>
-                  <p class="project_harvest">Yield increase&#58; 21&#37;</p>
-                  <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
-                  <p class="project_object">LLC &#34;Niva&#34; Skadovsky District, Kherson Region &#40;2013&#41;</p>
-              </li>
-              <li class="project-list_item">
-                  <svg class="project-list_icon" width="48" height="48">
-                      <use href="./images/icons.svg#sunflower"></use>
-                  </svg>
-                  <h4 class="project_name">Sunflower</h4>
-                  <p class="project_type">1 seed treatment &#43; 1 foliar treatment</p>
-                  <p class="project_harvest">Yield increase&#58; 25.6&#37;</p>
-                  <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
-                  <p class="project_object">LLC &#34;Niva&#34; Skadovsky District, Kherson Region &#40;2013&#41;</p>
-              </li>
-          </ul>
-      </div>
-      <a href="#order" class="cta_btn">Order Now</a>
-     
-  </div>
-</section>
-<!-- advantages -->
-<section class="advantages" id="advantages">
-  <div class="container">
-      <div class="section-title">
-          <div class="open-line"></div>
-          <h2 class="section_lable">Advantages</h2>
-          <div class="close-line"></div>
-      </div>
-      <ul class="advantages-list list">
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture >
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage1-winter-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage1-winter-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage1-winter-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage1-winter-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage1-winter-mobile-1x.jpg" alt="Wheat under snow" />                       
-                  </picture>          
-                  <p class="advantages_item_text">Increases plant resistance to frost, moisture deficiency, second-harvest planting, diseases, etc.</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture >
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage2-root-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage2-root-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage2-root-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage2-root-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage2-root-mobile-1x.jpg" alt="wheat roots" />                       
-                  </picture>                
-                  <p class="advantages_item_text">Promotes the active development and deeper penetration of the root system.</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage3-greenfield-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage3-greenfield-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage3-greenfield-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage3-greenfield-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage3-greenfield-mobile-1x.jpg" alt="Green field" />                     
-                  </picture>                
-                  <p class="advantages_item_text">Speeds up the growth of green mass and increases yield by 10-25&#37;</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage4-wheat-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage4-wheat-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage4-wheat-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage4-wheat-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage4-wheat-mobile-1x.jpg" alt="golden wheat field" />                    
-                  </picture>                
-                  <p class="advantages_item_text">Reduces nitrogen fertilizer consumption by 50&#37; due to improved plant absorption.</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage5-sunflower-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage5-sunflower-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage5-sunflower-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage5-sunflower-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage5-sunflower-mobile-1x.jpg" alt="sunflower field" />                        
-                  </picture>                
-                  <p class="advantages_item_text">Improves field germination of seeds and boosts plant growth energy.</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage6-vegetables-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage6-vegetables-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage6-vegetables-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage6-vegetables-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage6-vegetables-mobile-1x.jpg" alt="Vegetables" />                        
-                  </picture>                
-                  <p class="advantages_item_text">Strengthens immunity and resistance to bacterial and fungal diseases.</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage7-corn-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage7-corn-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage7-corn-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage7-corn-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage7-corn-mobile-1x.jpg" alt="Corn" />                        
-                  </picture>                
-                  <p class="advantages_item_text">Improves product quality (gluten content, proteins, starch, sugar, etc.).</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage8-soil-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage8-soil-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/advantages/advantage8-soil-mobile-1x.jpg 1x,
-                          ./images/advantages/advantage8-soil-mobile-1x.jpg 2x"/>
-                      <img  class="advantages_item_img" src="./images/advantages/advantage8-soil-mobile-1x.jpg" alt="hand with green twig" />  
-                  </picture>                
-                  <p class="advantages_item_text">Does not harm soil, the end product, or the environment.</p>
-              </div>
-          </li>
-          <li class="advantages-list_item">              
-              <div class="advantages_item_wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/advantages/advantage9-perelik-desktop-1x.jpg 1x,
-                          ./images/advantages/advantage9-perelik-desktop-2x.jpg 2x"/>                        
-                      <img  class="advantages_item_img" src="./images/advantages/advantage9-perelik-desktop-1x.jpg" alt="Oficial document" /> 
-                  </picture>                
-                  <p class="advantages_item_text">MIR products are certified and listed in the Register of Pesticides and Agrochemicals Approved for Use in Ukraine.</p>
-              </div>
-          </li>
-      </ul>
-  </div>
-</section>
-<!-- products -->
-<section class="products" id="products">
-  <div class="container">
-      <div class="section-title">
-          <div class="open-line"></div>
-          <h2 class="section_lable">Products</h2>
-          <div class="close-line"></div>
-      </div>
-      <div class="product_descript">
-          <p class="product_decript-up">The matrix solution of the drug is used both separately and in tank mixtures with PPP and soluble fertilizers (stimulators)</p>
-          <p class="product_descript-bottom">It is recommended to reduce the content of PPP by an average of 30% from the norm set by the manufacturer</p>
-      </div>
-      <ul class="attention-list list">
-          <li class="attention">&#42; Packaging can be customized according to agricultural crop and equipment needs.</li>
-          <li class="attention">&#42;&#42; The appearance of the packaging may differ from those shown on the website.</li>
-          <li class="attention">&#42;&#42;&#42; The price on conditions FOB (Incoterms 2020)</li>
-      </ul>
-      <div class="graine_group">
-          <h3 class="product_group-title">Seed treatment</h3>
-          <p class="product_group-text">Improves seed germination and energy; stimulates growth and accelerates plant development; promotes root formation; ensures active sprout formation; enhances the survival of seedlings and transplants</p>
-          <ul class="product_group-list list">
-              <li class="product-list_item">
-              <div class="product-item_wrap">
-                  <h4 class="product-item_title">MIR-Seed-Cereals</h4>
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-wheat-desktop-1x.png 1x,
-                          ./images/products/products-seeds-wheat-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-wheat-mobile-1x.png 1x,
-                          ./images/products/products-seeds-wheat-mobile-2x.png 2x"/>
-                      <img  class="product_item_img" src="./images/products/products-seeds-wheat-mobile-1x.png" alt="white boxes with company products with label MIR-Seed-Cereals" />                      
-                  </picture>      
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-wheat-price-desktop-1x.png 1x,
-                          ./images/products/products-seeds-wheat-price-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-wheat-price-mobile-1x.png 1x,
-                          ./images/products/products-seeds-wheat-price-mobile-2x.png 2x"/>
-                      <img  class="product_item_price-img" src="./images/products/products-seeds-wheat-price-mobile-1x.png" alt="green price tag - 3,8 dollars per he" />                       
-                  </picture>  
-                  <p class="packaging-info">Packaging is carried out on an individual order</p>   
-              </div>
-              </li>
-              <li class="product-list_item">
-              <div class="product-item_wrap">
-                  <h4 class="product-item_title">MIR-Seed-Rapeseed</h4>
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-rape-desktop-1x.png 1x,
-                          ./images/products/products-seeds-rape-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-rape-mobile-1x.png 1x,
-                          ./images/products/products-seeds-rape-mobile-2x.png 2x"/>
-                      <img  class="product_item_img" src="./images/products/products-seeds-rape-mobile-1x.png" alt="white boxes with company products with label MIR-Seed-Rapeseed" />                      
-                  </picture>      
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-rape-price-desktop-1x.png 1x,
-                          ./images/products/products-seeds-rape-price-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-rape-price-mobile-1x.png 1x,
-                          ./images/products/products-seeds-rape-price-mobile-2x.png 2x"/>
-                      <img  class="product_item_price-img" src="./images/products/products-seeds-rape-price-mobile-1x.png" alt="green price tag - 5 dollars per he" />                       
-                  </picture>  
-                  <p class="packaging-info">Packaging is carried out on an individual order</p>   
-              </div>
-              </li>
-              <li class="product-list_item">
-              <div class="product-item_wrap">
-                  <h4 class="product-item_title">MIR-Seed-Sunflower</h4>
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-sunflower-desktop-1x.png 1x,
-                          ./images/products/products-seeds-sunflower-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-sunflower-mobile-1x.png 1x,
-                          ./images/products/products-seeds-sunflower-mobile-2x.png 2x"/>
-                      <img  class="product_item_img" src="./images/products/products-seeds-sunflower-mobile-1x.png" alt="white boxes with company products with label MIR-Seed-Sunflower" />                      
-                  </picture>      
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-sunflower-price-desktop-1x.png 1x,
-                          ./images/products/products-seeds-sunflower-price-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-sunflower-price-mobile-1x.png 1x,
-                          ./images/products/products-seeds-sunflower-price-mobile-2x.png 2x"/>
-                      <img  class="product_item_price-img" src="./images/products/products-seeds-sunflower-price-mobile-1x.png" alt="green price tag - 4,6 dollars per he" />                       
-                  </picture>  
-                  <p class="packaging-info">Packaging is carried out on an individual order</p>   
-              </div>
-              </li>
-              <li class="product-list_item">
-              <div class="product-item_wrap">
-                  <h4 class="product-item_title">MIR-Seed-Corn</h4>
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-corn-desktop-1x.png 1x,
-                          ./images/products/products-seeds-corn-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-corn-mobile-1x.png 1x,
-                          ./images/products/products-seeds-corn-mobile-2x.png 2x"/>
-                      <img  class="product_item_img" src="./images/products/products-seeds-corn-mobile-1x.png" alt="white boxes with company products with label MIR-Seed-Corn" />                      
-                  </picture>      
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/products/products-seeds-corn-price-desktop-1x.png 1x,
-                          ./images/products/products-seeds-corn-price-desktop-2x.png 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/products/products-seeds-corn-price-mobile-1x.png 1x,
-                          ./images/products/products-seeds-corn-price-mobile-2x.png 2x"/>
-                      <img  class="product_item_price-img" src="./images/products/products-seeds-corn-price-mobile-1x.png" alt="green price tag - 4,1 dollars per he" />                       
-                  </picture>  
-                  <p class="packaging-info">Packaging is carried out on an individual order</p>   
-              </div>
-              </li>
-          </ul>
-      </div>
+        <div class="container container-header">
+            <a class="link logo" href="./indexeng.html" aria-label="logo company MIR">
+                <picture>
+                    <source media="(min-width:1240px)" srcset="./images/hero/logo-desktop-1x-min.png 1x,
+            ./images/hero/logo-desktop-2x-min.png 2x" />
+                    <source media="(min-width:375px)" srcset="./images/hero/logo-mobile-1x-min.png 1x,
+            ./images/hero/logo-mobile-2x-min.png 2x" />
+                    <img class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="logo company"
+                        loading="lazy" />
+                </picture>
+            </a>
+            <div class="language-switcher">
+                <a href="./indexeng.html">
+                    <picture>
+                        <source srcset="./images/hero/english-1x.jpg 1x,
+            ./images/hero/english-2x.jpg 2x" />
+                        <img class="english-switcher" src="./images/hero/english-1x.jpg" alt="UK flag" loading="lazy" />
+                    </picture>
+                </a>
+                <a href="./index.html">
+                    <picture>
+                        <source srcset="./images/hero/ukraine-1x.jpg 1x,
+            ./images/hero/ukraine-2x.jpg 2x" />
+                        <img class="ukrainian-switcher" src="./images/hero/ukraine-1x.jpg" alt="Ukrainian flag"
+                            loading="lazy" />
+                    </picture>
+                </a>
+            </div>
+            <button class="mobile-menu-open-btn menu-toggle js-open-menu" aria-expanded="false"
+                aria-controls="mobile-menu" type="button">
+                <svg class="mobile-menu-open-icon" aria-label="switch menu button">
+                    <use class="open-icon" href="./images/icons.svg#burger"></use>
+                </svg>
+            </button>
+            <nav class="navigation">
+                <ul class="list nav-list">
+                    <li class="nav_item list">
+                        <a class="link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav_item list">
+                        <a class="link" href="#project">About the Project</a>
+                    </li>
+                    <li class="nav_item list">
+                        <a class="link" href="#advantages">Advantages</a>
+                    </li>
+                    <li class="nav_item list">
+                        <a class="link" href="#products">Products</a>
+                    </li>
+                </ul>
+            </nav>
 
-      <div class="leaf_group">
-          <h3 class="product_group-title">Foliar treatment</h3>
-          <p class="product_group-text">Increases plant resistance to adverse environmental factors (frosts, lack of moisture, second-harvest planting, diseases, etc.); accelerates the growth of plant green mass and crop ripening</p>
-          <ul class="product_group-list list">
-              <li class="product-list_item-update">
-                  <div class="product-item_wrap-update">
-                      <div class="card-title">
-                          <h4 class="product-item_title">MIR-Foliar</h4>
-                          <p class="product-item_text">Used for cereals, legumes, and oilseeds</p>
-                      </div>
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-leaf-desktop-1x.png 1x,
-                              ./images/products/products-leaf-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-leaf-mobile-1x.png 1x,
-                              ./images/products/products-leaf-mobile-2x.png 2x"/>
-                          <img  class="product_item_img-update" src="./images/products/products-leaf-mobile-1x.png" alt="white boxes with company products with label MIR-leaf" />                      
-                      </picture>      
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-leaf-price-desktop-1x.png 1x,
-                              ./images/products/products-leaf-price-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-leaf-price-mobile-1x.png 1x,
-                              ./images/products/products-leaf-price-mobile-2x.png 2x"/>
-                          <img  class="product_item_price-img-update" src="./images/products/products-leaf-price-mobile-1x.png" alt="green price tag - 5 dollars per he" />                       
-                      </picture>  
-                      <p class="packaging-info">Packaging is carried out on an individual order</p>   
-                  </div>
-              </li>
-              <li class="product-list_item-update">
-                  <div class="product-item_wrap-update">
-                      <div class="card-title">
-                          <h4 class="product-item_title">MIR-Grape</h4>
-                          <p class="product-item_text">Used for vineyards</p>
-                      </div>
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-grape-desktop-1x.png 1x,
-                              ./images/products/products-grape-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-grape-mobile-1x.png 1x,
-                              ./images/products/products-grape-mobile-2x.png 2x"/>
-                          <img  class="product_item_img-update" src="./images/products/products-grape-mobile-1x.png" alt="white boxes with company products with label MIR-Grape" />                      
-                      </picture>      
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-grape-price-desktop-1x.png 1x,
-                              ./images/products/products-grape-price-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-grape-price-mobile-1x.png 1x,
-                              ./images/products/products-grape-price-mobile-2x.png 2x"/>
-                          <img  class="product_item_price-img-update" src="./images/products/products-grape-price-mobile-1x.png" alt="green price tag - 15 dollars per he" />                       
-                      </picture>  
-                      <p class="packaging-info">Packaging is carried out on an individual order</p>   
-                  </div>
-              </li>
-          </ul>    
-      </div>
+        </div>
 
-      <div class="special_group">
-          <h3 class="product_group-title">Specialized treatment</h3>
-          <ul class="product_group-list list">
-              <li class="product-list_item-update">
-                  <div class="product-item_wrap-update">
-                      <div class="card-title">
-                          <h4 class="product-item_title">MIR-Desiccant</h4>
-                          <p class="product-item_text">Speeds up the reduction of plant moisture, cessation of plant development from the root system, drying of stems and leaves</p>
-                      </div>
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-desikant-desktop-1x.png 1x,
-                              ./images/products/products-desikant-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-desikant-mobile-1x.png 1x,
-                              ./images/products/products-desikant-mobile-2x.png 2x"/>
-                          <img  class="product_item_img-update" src="./images/products/products-desikant-mobile-1x.png" alt="white boxes with company products with label MIR-Desicunt" />                      
-                      </picture>      
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-desikant-price-desktop-1x.png 1x,
-                              ./images/products/products-desikant-price-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-desikant-price-mobile-1x.png 1x,
-                              ./images/products/products-desikant-price-mobile-2x.png 2x"/>
-                          <img  class="product_item_price-img-update" src="./images/products/products-desikant-price-mobile-1x.png" alt="green price tag - 4 dollars per he" />                       
-                      </picture>  
-                      <p class="packaging-info">Packaging is carried out on an individual order</p>   
-                  </div>
-              </li>
-              <li class="product-list_item-update">
-                  <div class="product-item_wrap-update">
-                      <div class="card-title">
-                          <h4 class="product-item_title">MIR-Universal</h4>
-                          <p class="product-item_text">Used for vegetables, melons, and fruits</p>
-                      </div>
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-universal-desktop-1x.png 1x,
-                              ./images/products/products-universal-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-universal-mobile-1x.png 1x,
-                              ./images/products/products-universal-mobile-2x.png 2x"/>
-                          <img  class="product_item_img-update" src="./images/products/products-universal-mobile-1x.png" alt="white boxes with company products with label MIR-Universal" />                      
-                      </picture>      
-                      <picture>
-                          <source
-                              media="(min-width:1240px)"
-                              srcset="./images/products/products-universal-price-desktop-1x.png 1x,
-                              ./images/products/products-universal-price-desktop-2x.png 2x"/>
-                          <source
-                              media="(min-width:375px)"
-                              srcset="./images/products/products-universal-price-mobile-1x.png 1x,
-                              ./images/products/products-universal-price-mobile-2x.png 2x"/>
-                          <img  class="product_item_price-img-update" src="./images/products/products-universal-price-mobile-1x.png" alt="green price tag - 0,75 dollars per ar" />                       
-                      </picture>  
-                      <p class="packaging-info">Packaging is carried out on an individual order</p>   
-                  </div>
-              </li>
-          </ul>    
-      </div>
 
-      <a href="#order" class="cta_btn">Order Now</a>
-  </div>
-</section>
-<!-- gallery -->
-<section class="gallery">
-  <div class="container">
-      <div class="section-title">
-          <div class="open-line"></div>
-          <h2 class="section_lable">Gallery</h2>
-          <div class="close-line"></div>
-      </div>
-     <div class="gallery_wrapper">
-          <div class="mySlides fade">
-              <div class="gallery_img-wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/gallery/gallery-rape-desktop-1x.jpg 1x,
-                          ./images/gallery/gallery-rape-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/gallery/gallery-rape-mobile-1x.jpg 1x,
-                          ./images/gallery/gallery-rape-mobile-1x.jpg 2x"/>
-                      <img  class="gallery_img" src="./images/gallery/gallery-rape-mobile-1x.jpg" alt="field of rapeseed" />                      
-                  </picture>    
-              </div>                
-              <p class="gallery_img-text">Image by Michael Schwarzenberger from Pixabay</p>
-          </div>
-          <div class="mySlides fade">
-              <div class="gallery_img-wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/gallery/gallery-grape-desktop-1x.jpg 1x,
-                          ./images/gallery/gallery-grape-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/gallery/gallery-grape-mobile-1x.jpg 1x,
-                          ./images/gallery/gallery-grape-mobile-1x.jpg 2x"/>
-                      <img  class="gallery_img" src="./images/gallery/gallery-grape-mobile-1x.jpg" alt="vineyard with blue grapes" />                      
-                  </picture>    
-              </div>                
-              <p class="gallery_img-text">Image by Michael Schwarzenberger from Pixabay</p>
-          </div>
-          <div class="mySlides fade">
-              <div class="gallery_img-wrap">
-                  <picture>
-                      <source
-                          media="(min-width:1240px)"
-                          srcset="./images/gallery/gallery-corn-desktop-1x.jpg 1x,
-                          ./images/gallery/gallery-corn-desktop-2x.jpg 2x"/>
-                      <source
-                          media="(min-width:375px)"
-                          srcset="./images/gallery/gallery-corn-mobile-1x.jpg 1x,
-                          ./images/gallery/gallery-corn-mobile-1x.jpg 2x"/>
-                      <img  class="gallery_img" src="./images/gallery/gallery-corn-mobile-1x.jpg" alt="field of container" />                      
-                  </picture>    
-              </div>                
-              <p class="gallery_img-text">Image by Public Domaine Pictires Pixabay</p>
-          </div>
-     </div>
-  </div>
-</section>
-<!-- order -->
-<section class="order buynow-js" id="order">
-  <div class="container">
-      <div class="section-title">
-          <div class="open-line"></div>
-          <h2 class="section_lable">Order Now</h2>
-          <div class="close-line"></div>
-      </div>
-      <div class="order_section-content">
-        <p class="order-text">To order or receive advice on the use of the multi-purpose immunoregulator of growth and development of plants MIR specifically on your farm - please fill out the form and our specialists will contact you</p>
-     
-        <div class="wrapper">
-          <div class="form">
-            <form action="#" id="form" class="form__body">                
-              <div class="form__item">
-                <label for="formName" class="form__label">Name*:</label>
-                <input id="formName" 
-                type="text" name="name" 
-                class="form__input _req" 
-                placeholder="Enter your name"
-                pattern="[a-zA-Z]+">
-              </div>
-              <div class="form__item">
-                <label for="formEmail" class="form__label">Email*:</label>
-                <input id="formEmail" 
-                type="text" 
-                name="email" 
-                class="form__input _req _email"
-                placeholder="name@post.com">
-              </div>
-              <div class="form__item">
-                <label for="formType" class="form__label">What crops do you grow?*:</label>
-                <input id="formType" 
-                type="text" 
-                class="form__input _req _type" 
-                placeholder="Corn, wheat"
-                name="product-type">
-              </div>
-              
-              <div class="form__item">
-                <label for="formMessage" class="form__label">The text of your order or question:</label>
-                <textarea name="message" id="formMessage" class="form__input"></textarea>
-              </div>
-              
-              <div class="form__item">
-                <div class="checkbox">
-                  <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
-                  <label for="formAgreement" class="checkbox__label"><span class="agreement-lisence">I consent to the processing of personal data in accordance with the  <a href="umovaeng.html">Terms</a>*</span></label>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <div class="menu-container__overall">
+                <a class="link logo" href="./indexeng.html" aria-label="logo company MIR">
+                    <picture>
+                        <source media="(min-width:1240px)" srcset="./images/hero/logo-desktop-1x-min.png 1x,
+              ./images/hero/logo-desktop-2x-min.png 2x" />
+                        <source media="(min-width:375px)" srcset="./images/hero/logo-mobile-1x-min.png 1x,
+              ./images/hero/logo-mobile-2x-min.png 2x" />
+                        <img class="logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="The company logo"
+                            loading="lazy" />
+                    </picture>
+                </a>
+                <button class="mobile-menu-close-btn menu-toggle js-close-menu">
+                    <svg class="mobile-menu-close-icon" width="19" height="19">
+                        <use href="./images/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu-container__bottom">
+                <ul class="mobile-menu">
+                    <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu"
+                            href="./index.html#about">About Us</a></li>
+                    <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu"
+                            href="#project">About the Project</a></li>
+                    <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu"
+                            href="#advantages">Advantages</a></li>
+                    <li class="list mobile-menu__item"><a class="link mobile-menu__link js-close-menu"
+                            href="#products">Products</a></li>
+                </ul>
+
+                <a href="#order" class="mobile-cta_btn cta_btn js-open-menu">Order Now</a>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="container container-hero">
+                <picture>
+                    <source media="(min-width:1240px)" srcset="./images/hero/hero-desktop-1x.png 1x,
+                ./images/hero/hero-desktop-2x.png 2x" />
+                    <source media="(min-width:375px)" srcset="./images/hero/hero-mobile-1x.png 1x,
+                ./images/hero/hero-mobile-2x.png 2x" />
+                    <img class="hero-img" src="./images/hero/hero-mobile-1x.png" alt="company products"
+                        loading="lazy" />
+                </picture>
+                <div class="hero_decription">
+                    <h1 class="hero_title">Innovative Technologies for Agribusiness</h1>
+                    <p class="hero_text">The multipurpose immunoregulator of plant growth and development, MIR, enhances
+                        the effectiveness of plant protection products (PPP) and fertilizers by improving their
+                        absorption, distribution, and action. The MIR preparation allows for a 20-40% reduction in the
+                        use of PPP and fertilizers.</p>
+
+                    <a href="#order" class="cta_btn">Order Now</a>
                 </div>
-              </div>
-               
-              <button class="cta_btn" type="submit">Submit</button>
-            </form>
-        </div>
-      </div>       
-  </div> 
-</section>
+            </div>
+        </section>
+        <!-- about -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <div class="open-line"></div>
+                    <h2 class="section_lable">About Us</h2>
+                    <div class="close-line"></div>
+                </div>
 
-</main>
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-      <div class="footer-upper">
-          <a class="link logo" href="./indexeng.html" aria-label="logo company MIR">
-          <picture>
-            <source
-              media="(min-width:1240px)"
-              srcset="./images/hero/logo-desktop-1x-min.png 1x,
-              ./images/hero/logo-desktop-2x-min.png 2x"/>
-            <source
-              media="(min-width:375px)"
-              srcset="./images/hero/logo-mobile-1x-min.png 1x,
-              ./images/hero/logo-mobile-2x-min.png 2x"/>
-            <img  class="footer-logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="logo company" />
-          </picture>      
-          </a>
-          <div class="footer-down">
-          <div class="footer-adress">
-              <ul class="footer-adress_list list">
-                  <li class="footer-adress_item">
-                      <svg class="footer-adress_icon" width="24" height="24">
-                          <use href="./images/icons.svg#envelope"></use>
-                      </svg>
-                      <p class="footer-adress_text">58018 Ukraine, Chernivtsy</p>
-                  </li>
-                  <li class="footer-adress_item">
-                      <svg class="footer-adress_icon" width="24" height="24">
-                          <use href="./images/icons.svg#phone"></use>
-                      </svg>
-                      <div class="phone-list">
-                      <p class="footer-adress_text">+38-067-450-42-90</p>
-                      <p class="footer-adress_text">+38-050-295-04-19</p>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-          <div class="footer-social">
-          <ul class="footer-social_list list">
-              <li class="footer-social_item">
-                  <a href="https://t.me/tkulagina1974">
-                  <svg class="footer-social_icon" width="24" height="24">
-                      <use href="./images/icons.svg#telegram"></use>
-                  </svg>
-                  </a>
-              </li>
-              <li class="footer-social_item">
-                  <a href="https://wa.me/380676504290">
-                  <svg class="footer-social_icon" width="24" height="24">
-                      <use href="./images/icons.svg#wattsUp"></use>
-                  </svg>
-                  </a>
-              </li>
-              <li class="footer-social_item">
-                  <a href="https://www.facebook.com/profile.php?id=100079930453765">
-                  <svg class="footer-social_icon" width="24" height="24">
-                      <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                  </a>
-              </li>
-          </ul>
-          </div>
-          </div>
-      </div>
-          <a href="umovaeng.html" class="agreement-link link">
-              <p class="agreement-text">Consent to the processing of personal data</p>
-          </a>
-        <div class="copyright-line"></div>
-        <div class="copyright">
-          
-          <p class="copyright-text">&#169; All right received</p>
-        </div>  
-  </div>
-</footer>
-<!-- swipe -->
-<button class="scrollToTopBtn" type="button">
-  <svg class="scroll-icon" aria-label="top-up" width="24" height="24">
-     <use href="./images/icons.svg#upArrow"></use>
-  </svg>
-</button>
+                <ul class="about-list list">
+                    <li class="about-list_item">
+                        <svg class="about-list_icon" width="48" height="48">
+                            <use href="./images/icons.svg#university"></use>
+                        </svg>
+                        <p class="about-list_text">The methodology for using MIR products was developed in close
+                            collaboration with the Kherson State Agrarian University.</p>
+                    </li>
+                    <li class="about-list_item">
+                        <svg class="about-list_icon" width="48" height="48">
+                            <use href="./images/icons.svg#briefcase"></use>
+                        </svg>
+                        <p class="about-list_text">More than 10 scientific articles have been published on the use of
+                            the MIR product, and a PhD thesis in agricultural sciences has been defended.</p>
+                    </li>
+                    <li class="about-list_item">
+                        <svg class="about-list_icon" width="48" height="48">
+                            <use href="./images/icons.svg#license"></use>
+                        </svg>
+                        <p class="about-list_text">In 2017, the MIR product was included in the information collection
+                            "Innovative Developments of Universities and Scientific Institutions of the Ministry of
+                            Education and Science of Ukraine."</p>
+                    </li>
+                    <li class="about-list_item">
+                        <svg class="about-list_icon" width="48" height="48">
+                            <use href="./images/icons.svg#tractor"></use>
+                        </svg>
+                        <p class="about-list_text">Field trials have been conducted on private land plots and on
+                            research institute lands of the National Academy of Sciences of Ukraine since 2011.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- project -->
+        <section class="project" id="project">
+            <div class="container">
+                <div class="section-title">
+                    <div class="open-line"></div>
+                    <h2 class="section_lable">About the Project</h2>
+                    <div class="close-line"></div>
+                </div>
+                <div>
+                    <h3 class="project-section_title">Examples of results from using the MIR product</h3>
+                    <ul class="project-list list">
+                        <li class="project-list_item">
+                            <svg class="project-list_icon" width="48" height="48">
+                                <use href="./images/icons.svg#grape"></use>
+                            </svg>
+                            <h4 class="project_name">Grape</h4>
+                            <p class="project_type">2 foliar treatments</p>
+                            <p class="project_harvest">Yield increase&#58; 21&#37;</p>
+                            <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
+                            <p class="project_object">Agricultural firm &#34;Sovkhoz Bilozersky&#34; Kherson Region
+                                &#40;2021&#41;</p>
+                        </li>
+                        <li class="project-list_item">
+                            <svg class="project-list_icon" width="48" height="48">
+                                <use href="./images/icons.svg#rape"></use>
+                            </svg>
+                            <h4 class="project_name">Rapeseed (Canola)</h4>
+                            <p class="project_type">1 seed treatment &#43; 1 foliar treatment</p>
+                            <p class="project_harvest">Yield increase&#58; 21&#37;</p>
+                            <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
+                            <p class="project_object">JV &#34;Nibulon&#34; LLC Mykolaiv region &#40;2021&#41;</p>
+                        </li>
+                        <li class="project-list_item">
+                            <svg class="project-list_icon" width="48" height="48">
+                                <use href="./images/icons.svg#wheat"></use>
+                            </svg>
+                            <h4 class="project_name">Wheat</h4>
+                            <p class="project_type">1 seed treatment &#43; 2 foliar treatments</p>
+                            <p class="project_harvest">Yield increase&#58; 55&#37;</p>
+                            <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
+                            <p class="project_object">LLC &#34;Ortash Ukraine&#34; Mykolaiv region &#40;2021&#41;</p>
+                        </li>
+                        <li class="project-list_item">
+                            <svg class="project-list_icon" width="48" height="48">
+                                <use href="./images/icons.svg#corn"></use>
+                            </svg>
+                            <h4 class="project_name">Corn</h4>
+                            <p class="project_type">1 seed treatment &#43; 1 foliar treatment</p>
+                            <p class="project_harvest">Yield increase&#58; 32.5&#37;</p>
+                            <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
+                            <p class="project_object">Kherson State Agrarian and Economic University Kherson Region
+                                &#40;2013&#41;</p>
+                        </li>
+                        <li class="project-list_item">
+                            <svg class="project-list_icon" width="48" height="48">
+                                <use href="./images/icons.svg#watermelon"></use>
+                            </svg>
+                            <h4 class="project_name">Watermelon</h4>
+                            <p class="project_type">1 seed treatment &#43; 2 foliar treatments</p>
+                            <p class="project_harvest">Yield increase&#58; 21&#37;</p>
+                            <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
+                            <p class="project_object">LLC &#34;Niva&#34; Skadovsky District, Kherson Region
+                                &#40;2013&#41;</p>
+                        </li>
+                        <li class="project-list_item">
+                            <svg class="project-list_icon" width="48" height="48">
+                                <use href="./images/icons.svg#sunflower"></use>
+                            </svg>
+                            <h4 class="project_name">Sunflower</h4>
+                            <p class="project_type">1 seed treatment &#43; 1 foliar treatment</p>
+                            <p class="project_harvest">Yield increase&#58; 25.6&#37;</p>
+                            <p class="project_fertilizer">Reduction in PPP usage&#58; 30&#37;</p>
+                            <p class="project_object">LLC &#34;Niva&#34; Skadovsky District, Kherson Region
+                                &#40;2013&#41;</p>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#order" class="cta_btn">Order Now</a>
+
+            </div>
+        </section>
+        <!-- advantages -->
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <div class="section-title">
+                    <div class="open-line"></div>
+                    <h2 class="section_lable">Advantages</h2>
+                    <div class="close-line"></div>
+                </div>
+                <ul class="advantages-list list">
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage1-winter-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage1-winter-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage1-winter-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage1-winter-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img"
+                                    src="./images/advantages/advantage1-winter-mobile-1x.jpg" alt="Wheat under snow"
+                                    loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Increases plant resistance to frost, moisture deficiency,
+                                second-harvest planting, diseases, etc.</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage2-root-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage2-root-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage2-root-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage2-root-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img" src="./images/advantages/advantage2-root-mobile-1x.jpg"
+                                    alt="wheat roots" loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Promotes the active development and deeper penetration of
+                                the root system.</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage3-greenfield-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage3-greenfield-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage3-greenfield-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage3-greenfield-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img"
+                                    src="./images/advantages/advantage3-greenfield-mobile-1x.jpg" alt="Green field"
+                                    loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Speeds up the growth of green mass and increases yield by
+                                10-25&#37;</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage4-wheat-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage4-wheat-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage4-wheat-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage4-wheat-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img"
+                                    src="./images/advantages/advantage4-wheat-mobile-1x.jpg" alt="golden wheat field"
+                                    loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Reduces nitrogen fertilizer consumption by 50&#37; due to
+                                improved plant absorption.</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage5-sunflower-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage5-sunflower-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage5-sunflower-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage5-sunflower-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img"
+                                    src="./images/advantages/advantage5-sunflower-mobile-1x.jpg" alt="sunflower field"
+                                    loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Improves field germination of seeds and boosts plant growth
+                                energy.</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage6-vegetables-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage6-vegetables-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage6-vegetables-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage6-vegetables-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img"
+                                    src="./images/advantages/advantage6-vegetables-mobile-1x.jpg" alt="Vegetables"
+                                    loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Strengthens immunity and resistance to bacterial and fungal
+                                diseases.</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage7-corn-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage7-corn-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage7-corn-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage7-corn-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img" src="./images/advantages/advantage7-corn-mobile-1x.jpg"
+                                    alt="Corn" loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Improves product quality (gluten content, proteins, starch,
+                                sugar, etc.).</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage8-soil-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage8-soil-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/advantages/advantage8-soil-mobile-1x.jpg 1x,
+                          ./images/advantages/advantage8-soil-mobile-1x.jpg 2x" />
+                                <img class="advantages_item_img" src="./images/advantages/advantage8-soil-mobile-1x.jpg"
+                                    alt="hand with green twig" loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">Does not harm soil, the end product, or the environment.</p>
+                        </div>
+                    </li>
+                    <li class="advantages-list_item">
+                        <div class="advantages_item_wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/advantages/advantage9-perelik-desktop-1x.jpg 1x,
+                          ./images/advantages/advantage9-perelik-desktop-2x.jpg 2x" />
+                                <img class="advantages_item_img"
+                                    src="./images/advantages/advantage9-perelik-desktop-1x.jpg" alt="Oficial document"
+                                    loading="lazy" />
+                            </picture>
+                            <p class="advantages_item_text">MIR products are certified and listed in the Register of
+                                Pesticides and Agrochemicals Approved for Use in Ukraine.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- products -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="section-title">
+                    <div class="open-line"></div>
+                    <h2 class="section_lable">Products</h2>
+                    <div class="close-line"></div>
+                </div>
+                <div class="product_descript">
+                    <p class="product_decript-up">The matrix solution of the drug is used both separately and in tank
+                        mixtures with PPP and soluble fertilizers (stimulators)</p>
+                    <p class="product_descript-bottom">It is recommended to reduce the content of PPP by an average of
+                        30% from the norm set by the manufacturer</p>
+                </div>
+                <ul class="attention-list list">
+                    <li class="attention">&#42; Packaging can be customized according to agricultural crop and equipment
+                        needs.</li>
+                    <li class="attention">&#42;&#42; The appearance of the packaging may differ from those shown on the
+                        website.</li>
+                    <li class="attention">&#42;&#42;&#42; The price on conditions FOB (Incoterms 2020)</li>
+                </ul>
+                <div class="graine_group">
+                    <h3 class="product_group-title">Seed treatment</h3>
+                    <p class="product_group-text">Improves seed germination and energy; stimulates growth and
+                        accelerates plant development; promotes root formation; ensures active sprout formation;
+                        enhances the survival of seedlings and transplants</p>
+                    <ul class="product_group-list list">
+                        <li class="product-list_item">
+                            <div class="product-item_wrap">
+                                <h4 class="product-item_title">MIR-Seed-Cereals</h4>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-wheat-desktop-1x.png 1x,
+                          ./images/products/products-seeds-wheat-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-wheat-mobile-1x.png 1x,
+                          ./images/products/products-seeds-wheat-mobile-2x.png 2x" />
+                                    <img class="product_item_img"
+                                        src="./images/products/products-seeds-wheat-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-Seed-Cereals"
+                                        loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-wheat-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-wheat-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-wheat-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-wheat-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img"
+                                        src="./images/products/products-seeds-wheat-price-mobile-1x.png"
+                                        alt="green price tag - 3,8 dollars per he" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                        <li class="product-list_item">
+                            <div class="product-item_wrap">
+                                <h4 class="product-item_title">MIR-Seed-Rapeseed</h4>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-rape-desktop-1x.png 1x,
+                          ./images/products/products-seeds-rape-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-rape-mobile-1x.png 1x,
+                          ./images/products/products-seeds-rape-mobile-2x.png 2x" />
+                                    <img class="product_item_img"
+                                        src="./images/products/products-seeds-rape-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-Seed-Rapeseed"
+                                        loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-rape-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-rape-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-rape-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-rape-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img"
+                                        src="./images/products/products-seeds-rape-price-mobile-1x.png"
+                                        alt="green price tag - 5 dollars per he" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                        <li class="product-list_item">
+                            <div class="product-item_wrap">
+                                <h4 class="product-item_title">MIR-Seed-Sunflower</h4>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-sunflower-desktop-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-sunflower-mobile-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-mobile-2x.png 2x" />
+                                    <img class="product_item_img"
+                                        src="./images/products/products-seeds-sunflower-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-Seed-Sunflower"
+                                        loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-sunflower-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-sunflower-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-sunflower-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img"
+                                        src="./images/products/products-seeds-sunflower-price-mobile-1x.png"
+                                        alt="green price tag - 4,6 dollars per he" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                        <li class="product-list_item">
+                            <div class="product-item_wrap">
+                                <h4 class="product-item_title">MIR-Seed-Corn</h4>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-corn-desktop-1x.png 1x,
+                          ./images/products/products-seeds-corn-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-corn-mobile-1x.png 1x,
+                          ./images/products/products-seeds-corn-mobile-2x.png 2x" />
+                                    <img class="product_item_img"
+                                        src="./images/products/products-seeds-corn-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-Seed-Corn"
+                                        loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-seeds-corn-price-desktop-1x.png 1x,
+                          ./images/products/products-seeds-corn-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-seeds-corn-price-mobile-1x.png 1x,
+                          ./images/products/products-seeds-corn-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img"
+                                        src="./images/products/products-seeds-corn-price-mobile-1x.png"
+                                        alt="green price tag - 4,1 dollars per he" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="leaf_group">
+                    <h3 class="product_group-title">Foliar treatment</h3>
+                    <p class="product_group-text">Increases plant resistance to adverse environmental factors (frosts,
+                        lack of moisture, second-harvest planting, diseases, etc.); accelerates the growth of plant
+                        green mass and crop ripening</p>
+                    <ul class="product_group-list list">
+                        <li class="product-list_item-update">
+                            <div class="product-item_wrap-update">
+                                <div class="card-title">
+                                    <h4 class="product-item_title">MIR-Foliar</h4>
+                                    <p class="product-item_text">Used for cereals, legumes, and oilseeds</p>
+                                </div>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-leaf-desktop-1x.png 1x,
+                              ./images/products/products-leaf-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-leaf-mobile-1x.png 1x,
+                              ./images/products/products-leaf-mobile-2x.png 2x" />
+                                    <img class="product_item_img-update"
+                                        src="./images/products/products-leaf-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-leaf" loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-leaf-price-desktop-1x.png 1x,
+                              ./images/products/products-leaf-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-leaf-price-mobile-1x.png 1x,
+                              ./images/products/products-leaf-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img-update"
+                                        src="./images/products/products-leaf-price-mobile-1x.png"
+                                        alt="green price tag - 5 dollars per he" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                        <li class="product-list_item-update">
+                            <div class="product-item_wrap-update">
+                                <div class="card-title">
+                                    <h4 class="product-item_title">MIR-Grape</h4>
+                                    <p class="product-item_text">Used for vineyards</p>
+                                </div>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-grape-desktop-1x.png 1x,
+                              ./images/products/products-grape-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-grape-mobile-1x.png 1x,
+                              ./images/products/products-grape-mobile-2x.png 2x" />
+                                    <img class="product_item_img-update"
+                                        src="./images/products/products-grape-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-Grape" loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-grape-price-desktop-1x.png 1x,
+                              ./images/products/products-grape-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-grape-price-mobile-1x.png 1x,
+                              ./images/products/products-grape-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img-update"
+                                        src="./images/products/products-grape-price-mobile-1x.png"
+                                        alt="green price tag - 15 dollars per he" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="special_group">
+                    <h3 class="product_group-title">Specialized treatment</h3>
+                    <ul class="product_group-list list">
+                        <li class="product-list_item-update">
+                            <div class="product-item_wrap-update">
+                                <div class="card-title">
+                                    <h4 class="product-item_title">MIR-Desiccant</h4>
+                                    <p class="product-item_text">Speeds up the reduction of plant moisture, cessation of
+                                        plant development from the root system, drying of stems and leaves</p>
+                                </div>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-desikant-desktop-1x.png 1x,
+                              ./images/products/products-desikant-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-desikant-mobile-1x.png 1x,
+                              ./images/products/products-desikant-mobile-2x.png 2x" />
+                                    <img class="product_item_img-update"
+                                        src="./images/products/products-desikant-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-Desicunt"
+                                        loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-desikant-price-desktop-1x.png 1x,
+                              ./images/products/products-desikant-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-desikant-price-mobile-1x.png 1x,
+                              ./images/products/products-desikant-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img-update"
+                                        src="./images/products/products-desikant-price-mobile-1x.png"
+                                        alt="green price tag - 4 dollars per he" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                        <li class="product-list_item-update">
+                            <div class="product-item_wrap-update">
+                                <div class="card-title">
+                                    <h4 class="product-item_title">MIR-Universal</h4>
+                                    <p class="product-item_text">Used for vegetables, melons, and fruits</p>
+                                </div>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-universal-desktop-1x.png 1x,
+                              ./images/products/products-universal-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-universal-mobile-1x.png 1x,
+                              ./images/products/products-universal-mobile-2x.png 2x" />
+                                    <img class="product_item_img-update"
+                                        src="./images/products/products-universal-mobile-1x.png"
+                                        alt="white boxes with company products with label MIR-Universal"
+                                        loading="lazy" />
+                                </picture>
+                                <picture>
+                                    <source media="(min-width:1240px)" srcset="./images/products/products-universal-price-desktop-1x.png 1x,
+                              ./images/products/products-universal-price-desktop-2x.png 2x" />
+                                    <source media="(min-width:375px)" srcset="./images/products/products-universal-price-mobile-1x.png 1x,
+                              ./images/products/products-universal-price-mobile-2x.png 2x" />
+                                    <img class="product_item_price-img-update"
+                                        src="./images/products/products-universal-price-mobile-1x.png"
+                                        alt="green price tag - 0,75 dollars per ar" loading="lazy" />
+                                </picture>
+                                <p class="packaging-info">Packaging is carried out on an individual order</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="#order" class="cta_btn">Order Now</a>
+            </div>
+        </section>
+        <!-- gallery -->
+        <section class="gallery">
+            <div class="container">
+                <div class="section-title">
+                    <div class="open-line"></div>
+                    <h2 class="section_lable">Gallery</h2>
+                    <div class="close-line"></div>
+                </div>
+                <div class="gallery_wrapper">
+                    <div class="mySlides fade">
+                        <div class="gallery_img-wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/gallery/gallery-rape-desktop-1x.jpg 1x,
+                          ./images/gallery/gallery-rape-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/gallery/gallery-rape-mobile-1x.jpg 1x,
+                          ./images/gallery/gallery-rape-mobile-1x.jpg 2x" />
+                                <img class="gallery_img" src="./images/gallery/gallery-rape-mobile-1x.jpg"
+                                    alt="field of rapeseed" loading="lazy" />
+                            </picture>
+                        </div>
+                        <p class="gallery_img-text">Image by Michael Schwarzenberger from Pixabay</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="gallery_img-wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/gallery/gallery-grape-desktop-1x.jpg 1x,
+                          ./images/gallery/gallery-grape-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/gallery/gallery-grape-mobile-1x.jpg 1x,
+                          ./images/gallery/gallery-grape-mobile-1x.jpg 2x" />
+                                <img class="gallery_img" src="./images/gallery/gallery-grape-mobile-1x.jpg"
+                                    alt="vineyard with blue grapes" loading="lazy" />
+                            </picture>
+                        </div>
+                        <p class="gallery_img-text">Image by Michael Schwarzenberger from Pixabay</p>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="gallery_img-wrap">
+                            <picture>
+                                <source media="(min-width:1240px)" srcset="./images/gallery/gallery-corn-desktop-1x.jpg 1x,
+                          ./images/gallery/gallery-corn-desktop-2x.jpg 2x" />
+                                <source media="(min-width:375px)" srcset="./images/gallery/gallery-corn-mobile-1x.jpg 1x,
+                          ./images/gallery/gallery-corn-mobile-1x.jpg 2x" />
+                                <img class="gallery_img" src="./images/gallery/gallery-corn-mobile-1x.jpg"
+                                    alt="field of container" loading="lazy" />
+                            </picture>
+                        </div>
+                        <p class="gallery_img-text">Image by Public Domaine Pictires Pixabay</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- order -->
+        <section class="order buynow-js" id="order">
+            <div class="container">
+                <div class="section-title">
+                    <div class="open-line"></div>
+                    <h2 class="section_lable">Order Now</h2>
+                    <div class="close-line"></div>
+                </div>
+                <div class="order_section-content">
+                    <p class="order-text">To order or receive advice on the use of the multi-purpose immunoregulator of
+                        growth and development of plants MIR specifically on your farm - please fill out the form and
+                        our specialists will contact you</p>
+
+                    <div class="wrapper">
+                        <div class="form">
+
+                            <form action="sendmail.php" method="POST" id="form" class="form__body">
+
+                                <div class="form__item">
+                                    <label for="formName" class="form__label">Name*:</label>
+                                    <input id="formName" type="text" name="name" class="form__input _req"
+                                        placeholder="Enter your name" pattern="[a-zA-Z]+">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formEmail" class="form__label">Email*:</label>
+                                    <input id="formEmail" type="text" name="email" class="form__input _req _email"
+                                        placeholder="name@post.com">
+                                </div>
+                                <div class="form__item">
+                                    <label for="formType" class="form__label">What crops do you grow?*:</label>
+                                    <input id="formType" type="text" class="form__input _req _type"
+                                        placeholder="Corn, wheat" name="product-type">
+                                </div>
+
+                                <div class="form__item">
+                                    <label for="formMessage" class="form__label">The text of your order or
+                                        question:</label>
+                                    <textarea name="message" id="formMessage" class="form__input"></textarea>
+                                </div>
+
+                                <div class="form__item">
+                                    <div class="checkbox">
+                                        <input id="formAgreement" checked type="checkbox" name="agreement"
+                                            class="checkbox__input _req">
+                                        <label for="formAgreement" class="checkbox__label"><span
+                                                class="agreement-lisence">I consent to the processing of personal data
+                                                in accordance with the <a
+                                                    href="./umovaeng.html">Terms</a>*</span></label>
+                                    </div>
+                                </div>
+
+                                <button class="cta_btn" type="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-upper">
+                <a class="link logo" href="./indexeng.html" aria-label="logo company MIR">
+                    <picture>
+                        <source media="(min-width:1240px)" srcset="./images/hero/logo-desktop-1x-min.png 1x,
+              ./images/hero/logo-desktop-2x-min.png 2x" />
+                        <source media="(min-width:375px)" srcset="./images/hero/logo-mobile-1x-min.png 1x,
+              ./images/hero/logo-mobile-2x-min.png 2x" />
+                        <img class="footer-logo-img" src="./images/hero/logo-mobile-1x-min.png" alt="logo company"
+                            loading="lazy" />
+                    </picture>
+                </a>
+                <div class="footer-down">
+                    <div class="footer-adress">
+                        <ul class="footer-adress_list list">
+                            <li class="footer-adress_item">
+                                <svg class="footer-adress_icon" width="24" height="24">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                <p class="footer-adress_text">58018 Ukraine, Chernivtsy</p>
+                            </li>
+                            <li class="footer-adress_item">
+                                <svg class="footer-adress_icon" width="24" height="24">
+                                    <use href="./images/icons.svg#phone"></use>
+                                </svg>
+                                <div class="phone-list">
+                                    <p class="footer-adress_text">+38-067-650-42-90</p>
+                                    <p class="footer-adress_text">+38-050-295-04-19</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <ul class="footer-social_list list">
+                            <li class="footer-social_item">
+                                <a href="https://t.me/tkulagina1974">
+                                    <svg class="footer-social_icon" width="24" height="24">
+                                        <use href="./images/icons.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social_item">
+                                <a href="https://wa.me/380676504290">
+                                    <svg class="footer-social_icon" width="24" height="24">
+                                        <use href="./images/icons.svg#wattsUp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social_item">
+                                <a href="https://www.facebook.com/profile.php?id=100079930453765">
+                                    <svg class="footer-social_icon" width="24" height="24">
+                                        <use href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="./umovaeng.html" class="agreement-link link">
+                <p class="agreement-text">Consent to the processing of personal data</p>
+            </a>
+            <div class="copyright-line"></div>
+            <div class="copyright">
+
+                <p class="copyright-text">&#169; All right received</p>
+            </div>
+        </div>
+    </footer>
+    <!-- swipe -->
+    <button class="scrollToTopBtn" type="button">
+        <svg class="scroll-icon" aria-label="top-up" width="24" height="24">
+            <use href="./images/icons.svg#upArrow"></use>
+        </svg>
+    </button>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/swipe-up.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/anchor.js"></script>
     <script src="./js/order-form.js"></script>
-  </body>
+</body>
+
 </html>
